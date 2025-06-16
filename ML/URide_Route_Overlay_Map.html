@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9885e211dd7b89b65506a184ee85d4ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9885e211dd7b89b65506a184ee85d4ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9885e211dd7b89b65506a184ee85d4ef = L.map(
+                "map_9885e211dd7b89b65506a184ee85d4ef",
+                {
+                    center: [51.0782, -114.1336],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e2d18b1a87ff413703ef706caf41f62 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9e2d18b1a87ff413703ef706caf41f62.addTo(map_9885e211dd7b89b65506a184ee85d4ef);
+        
+    
+            var marker_cluster_1af21aa5c099a721f70f935950178e2a = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_cf8721ecb7cab5d84e58c73da7c9a9b3 = L.marker(
+                [51.013442, -114.1516969],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_ddd8ec3a0cefb13d79115d82dcfdfae8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4853bcc5b0813e2980a41bb29253305b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ed0cc397b008a161ddfe738f5ad90d6 = $(`<div id="html_8ed0cc397b008a161ddfe738f5ad90d6" style="width: 100.0%; height: 100.0%;">Transit User from Glamorgan<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_4853bcc5b0813e2980a41bb29253305b.setContent(html_8ed0cc397b008a161ddfe738f5ad90d6);
+            
+        
+
+        marker_cf8721ecb7cab5d84e58c73da7c9a9b3.bindPopup(popup_4853bcc5b0813e2980a41bb29253305b)
+        ;
+
+        
+    
+    
+                marker_cf8721ecb7cab5d84e58c73da7c9a9b3.setIcon(icon_ddd8ec3a0cefb13d79115d82dcfdfae8);
+            
+    
+            var marker_942b5176be3b93348df7adc45b14715b = L.marker(
+                [50.9063403, -114.0747722],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_975d311ecc06b1f50109be2929182786 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5caf3d558b4c3e566cb70b51c12e9016 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1ef9e164d2e2186e006b8283f0ed510 = $(`<div id="html_e1ef9e164d2e2186e006b8283f0ed510" style="width: 100.0%; height: 100.0%;">Transit User from Shawnessey<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_5caf3d558b4c3e566cb70b51c12e9016.setContent(html_e1ef9e164d2e2186e006b8283f0ed510);
+            
+        
+
+        marker_942b5176be3b93348df7adc45b14715b.bindPopup(popup_5caf3d558b4c3e566cb70b51c12e9016)
+        ;
+
+        
+    
+    
+                marker_942b5176be3b93348df7adc45b14715b.setIcon(icon_975d311ecc06b1f50109be2929182786);
+            
+    
+            var marker_628fb74bb6448e1e0a1e8610f6e4c016 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_7677a93c4e76da5d38547a3e48768ab0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94fabbe48b9ca01f80b7ae2944d75f69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_401d0a9b1182ab72ac2e8f182520d52f = $(`<div id="html_401d0a9b1182ab72ac2e8f182520d52f" style="width: 100.0%; height: 100.0%;">Transit User from Tuscany<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_94fabbe48b9ca01f80b7ae2944d75f69.setContent(html_401d0a9b1182ab72ac2e8f182520d52f);
+            
+        
+
+        marker_628fb74bb6448e1e0a1e8610f6e4c016.bindPopup(popup_94fabbe48b9ca01f80b7ae2944d75f69)
+        ;
+
+        
+    
+    
+                marker_628fb74bb6448e1e0a1e8610f6e4c016.setIcon(icon_7677a93c4e76da5d38547a3e48768ab0);
+            
+    
+            var marker_2de28dc3472aebdb366ad1531bd93018 = L.marker(
+                [51.1200131, -114.1864052],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_92e37083c23f6f1058b7524ed7442388 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64be67a0997fde761053f2e86737df20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4af7d016dab6bfc890b4a5f57d2b7077 = $(`<div id="html_4af7d016dab6bfc890b4a5f57d2b7077" style="width: 100.0%; height: 100.0%;">Transit User from Ranchlands<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_64be67a0997fde761053f2e86737df20.setContent(html_4af7d016dab6bfc890b4a5f57d2b7077);
+            
+        
+
+        marker_2de28dc3472aebdb366ad1531bd93018.bindPopup(popup_64be67a0997fde761053f2e86737df20)
+        ;
+
+        
+    
+    
+                marker_2de28dc3472aebdb366ad1531bd93018.setIcon(icon_92e37083c23f6f1058b7524ed7442388);
+            
+    
+            var marker_db59e0ed5fc3117ec707cca88de8febe = L.marker(
+                [51.033333, -113.966667],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_35aebcecafcac25e84148e9c61a152b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f0301e7a3ad4b1837dbdebe683e1bd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cc2ddec1f78acc327867db3cbb807fa = $(`<div id="html_6cc2ddec1f78acc327867db3cbb807fa" style="width: 100.0%; height: 100.0%;">Transit User from forest lawn<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_5f0301e7a3ad4b1837dbdebe683e1bd5.setContent(html_6cc2ddec1f78acc327867db3cbb807fa);
+            
+        
+
+        marker_db59e0ed5fc3117ec707cca88de8febe.bindPopup(popup_5f0301e7a3ad4b1837dbdebe683e1bd5)
+        ;
+
+        
+    
+    
+                marker_db59e0ed5fc3117ec707cca88de8febe.setIcon(icon_35aebcecafcac25e84148e9c61a152b2);
+            
+    
+            var marker_89d9a9521eb98d52f010c8300256f2d7 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_6535f6f48a79ecbe2cc62d1a18a85644 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_729105ea498f8044c81d5a14784796ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f78712c6a18cc3c5d3af19b6ddd29803 = $(`<div id="html_f78712c6a18cc3c5d3af19b6ddd29803" style="width: 100.0%; height: 100.0%;">Transit User from NE calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_729105ea498f8044c81d5a14784796ec.setContent(html_f78712c6a18cc3c5d3af19b6ddd29803);
+            
+        
+
+        marker_89d9a9521eb98d52f010c8300256f2d7.bindPopup(popup_729105ea498f8044c81d5a14784796ec)
+        ;
+
+        
+    
+    
+                marker_89d9a9521eb98d52f010c8300256f2d7.setIcon(icon_6535f6f48a79ecbe2cc62d1a18a85644);
+            
+    
+            var marker_3c7dcc9c40ab0f186c0544d032c5a565 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_709f06282971bac1bba17b5ca9e5d5ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6498d565195a755b57aceca150091893 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f6422b19b28dbd60d7f50ca467bb070 = $(`<div id="html_4f6422b19b28dbd60d7f50ca467bb070" style="width: 100.0%; height: 100.0%;">Transit User from NE Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_6498d565195a755b57aceca150091893.setContent(html_4f6422b19b28dbd60d7f50ca467bb070);
+            
+        
+
+        marker_3c7dcc9c40ab0f186c0544d032c5a565.bindPopup(popup_6498d565195a755b57aceca150091893)
+        ;
+
+        
+    
+    
+                marker_3c7dcc9c40ab0f186c0544d032c5a565.setIcon(icon_709f06282971bac1bba17b5ca9e5d5ec);
+            
+    
+            var marker_023a068fd8c69f74518c12c35742cf5d = L.marker(
+                [51.1187237, -114.068287],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_73c892189531457da92a5371b0c2ecd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41509fd1bed3ba58ace508eef10bfc43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c824c86995a3a21f8adf95c17b260fc = $(`<div id="html_8c824c86995a3a21f8adf95c17b260fc" style="width: 100.0%; height: 100.0%;">Transit User from NW Huntington Hills<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_41509fd1bed3ba58ace508eef10bfc43.setContent(html_8c824c86995a3a21f8adf95c17b260fc);
+            
+        
+
+        marker_023a068fd8c69f74518c12c35742cf5d.bindPopup(popup_41509fd1bed3ba58ace508eef10bfc43)
+        ;
+
+        
+    
+    
+                marker_023a068fd8c69f74518c12c35742cf5d.setIcon(icon_73c892189531457da92a5371b0c2ecd2);
+            
+    
+            var marker_ba83ab481cb5804ba177ef50f747aa5e = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_8ab0aac58c9271e5d1d5a9b6ad3e20d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd845a9e01619b84bc7584c30e36adde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4936becba82eede56091deb2dafd6d0 = $(`<div id="html_a4936becba82eede56091deb2dafd6d0" style="width: 100.0%; height: 100.0%;">Transit User from NE Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_bd845a9e01619b84bc7584c30e36adde.setContent(html_a4936becba82eede56091deb2dafd6d0);
+            
+        
+
+        marker_ba83ab481cb5804ba177ef50f747aa5e.bindPopup(popup_bd845a9e01619b84bc7584c30e36adde)
+        ;
+
+        
+    
+    
+                marker_ba83ab481cb5804ba177ef50f747aa5e.setIcon(icon_8ab0aac58c9271e5d1d5a9b6ad3e20d4);
+            
+    
+            var marker_81473ad10bb9d2d1fb6381addd1f9edf = L.marker(
+                [51.0647776, -113.95884],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_5470dee614edfc9b3a32595bc35b3f7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59946eef4e6e7da64818f82818b6bf67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbb15b5836aa7a76a1fdda8d2f75991c = $(`<div id="html_fbb15b5836aa7a76a1fdda8d2f75991c" style="width: 100.0%; height: 100.0%;">Transit User from Marlborough Area<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_59946eef4e6e7da64818f82818b6bf67.setContent(html_fbb15b5836aa7a76a1fdda8d2f75991c);
+            
+        
+
+        marker_81473ad10bb9d2d1fb6381addd1f9edf.bindPopup(popup_59946eef4e6e7da64818f82818b6bf67)
+        ;
+
+        
+    
+    
+                marker_81473ad10bb9d2d1fb6381addd1f9edf.setIcon(icon_5470dee614edfc9b3a32595bc35b3f7d);
+            
+    
+            var marker_6d228ab28652dd9d126aa650f96b359f = L.marker(
+                [50.9424353, -114.1093591],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_d417eb280106729c0844b7ec6d682bb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a6f61f84ab5195a6a9ee0155bd4b9fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5eeb894cdefd374cc34f56d193915b0 = $(`<div id="html_a5eeb894cdefd374cc34f56d193915b0" style="width: 100.0%; height: 100.0%;">Transit User from Woodlands<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_5a6f61f84ab5195a6a9ee0155bd4b9fc.setContent(html_a5eeb894cdefd374cc34f56d193915b0);
+            
+        
+
+        marker_6d228ab28652dd9d126aa650f96b359f.bindPopup(popup_5a6f61f84ab5195a6a9ee0155bd4b9fc)
+        ;
+
+        
+    
+    
+                marker_6d228ab28652dd9d126aa650f96b359f.setIcon(icon_d417eb280106729c0844b7ec6d682bb5);
+            
+    
+            var marker_6e025f82d7b909c44e55ad1315b69674 = L.marker(
+                [51.0538013, -114.0443096],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_fef759c8497c68268bd43fa445d5157d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b99f7f8a09d044cb8e282b4941be49b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56b5ae316c73764e801a11cb6c582060 = $(`<div id="html_56b5ae316c73764e801a11cb6c582060" style="width: 100.0%; height: 100.0%;">Transit User from Bridgeland<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_b99f7f8a09d044cb8e282b4941be49b9.setContent(html_56b5ae316c73764e801a11cb6c582060);
+            
+        
+
+        marker_6e025f82d7b909c44e55ad1315b69674.bindPopup(popup_b99f7f8a09d044cb8e282b4941be49b9)
+        ;
+
+        
+    
+    
+                marker_6e025f82d7b909c44e55ad1315b69674.setIcon(icon_fef759c8497c68268bd43fa445d5157d);
+            
+    
+            var marker_995294d7a6848045f39cc71d58c68a6c = L.marker(
+                [51.0417305, -114.0610488],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_781f8b8ebdadcab640f11b691494e0d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44d54c20d8f637a3e6801844d844cee7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a90ea9dd368f37533a690c367c4a80f = $(`<div id="html_4a90ea9dd368f37533a690c367c4a80f" style="width: 100.0%; height: 100.0%;">Transit User from SE Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_44d54c20d8f637a3e6801844d844cee7.setContent(html_4a90ea9dd368f37533a690c367c4a80f);
+            
+        
+
+        marker_995294d7a6848045f39cc71d58c68a6c.bindPopup(popup_44d54c20d8f637a3e6801844d844cee7)
+        ;
+
+        
+    
+    
+                marker_995294d7a6848045f39cc71d58c68a6c.setIcon(icon_781f8b8ebdadcab640f11b691494e0d3);
+            
+    
+            var marker_7ccc6e9a0114db17a19eadfed7b901fe = L.marker(
+                [51.1595638, -114.148693],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_2e5ef446563457e2323304a2bc0ccd3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4a2133a00f485efc2b0f5c28eec68da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e1105bf8af79738c0ed70e0e0d372d7 = $(`<div id="html_3e1105bf8af79738c0ed70e0e0d372d7" style="width: 100.0%; height: 100.0%;">Transit User from sherwood<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_a4a2133a00f485efc2b0f5c28eec68da.setContent(html_3e1105bf8af79738c0ed70e0e0d372d7);
+            
+        
+
+        marker_7ccc6e9a0114db17a19eadfed7b901fe.bindPopup(popup_a4a2133a00f485efc2b0f5c28eec68da)
+        ;
+
+        
+    
+    
+                marker_7ccc6e9a0114db17a19eadfed7b901fe.setIcon(icon_2e5ef446563457e2323304a2bc0ccd3d);
+            
+    
+            var marker_db17e737194add9a1034b65d86a47634 = L.marker(
+                [51.023324, -114.1488999],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_c5dc0ea88069d01f54bd5befbae6834a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbdb0c18b9a5bfda39517c4b0e10540a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f461aea635c47148aa1893093f144f4 = $(`<div id="html_7f461aea635c47148aa1893093f144f4" style="width: 100.0%; height: 100.0%;">Transit User from Glenbrook<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_cbdb0c18b9a5bfda39517c4b0e10540a.setContent(html_7f461aea635c47148aa1893093f144f4);
+            
+        
+
+        marker_db17e737194add9a1034b65d86a47634.bindPopup(popup_cbdb0c18b9a5bfda39517c4b0e10540a)
+        ;
+
+        
+    
+    
+                marker_db17e737194add9a1034b65d86a47634.setIcon(icon_c5dc0ea88069d01f54bd5befbae6834a);
+            
+    
+            var marker_ef85b5981feb51de6a39ec737ed25344 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_e55e35270df694209d533ea8ac807aa1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7f6c97d94ba3df1a215db63bb5d7ab6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cf2b561c4d0e4713b7550eb4ee58e51 = $(`<div id="html_3cf2b561c4d0e4713b7550eb4ee58e51" style="width: 100.0%; height: 100.0%;">Transit User from Tuscany<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_c7f6c97d94ba3df1a215db63bb5d7ab6.setContent(html_3cf2b561c4d0e4713b7550eb4ee58e51);
+            
+        
+
+        marker_ef85b5981feb51de6a39ec737ed25344.bindPopup(popup_c7f6c97d94ba3df1a215db63bb5d7ab6)
+        ;
+
+        
+    
+    
+                marker_ef85b5981feb51de6a39ec737ed25344.setIcon(icon_e55e35270df694209d533ea8ac807aa1);
+            
+    
+            var marker_4f6af50803ac32844ab1030d35c8d921 = L.marker(
+                [50.9852177, -114.1081198],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_8dac0c12a43185786c2ac808c51bca09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59575c28a72ab6cb6f5f43215d282460 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0cd26b3201f03c1ad7133c95b6da9b2 = $(`<div id="html_e0cd26b3201f03c1ad7133c95b6da9b2" style="width: 100.0%; height: 100.0%;">Transit User from southwest<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_59575c28a72ab6cb6f5f43215d282460.setContent(html_e0cd26b3201f03c1ad7133c95b6da9b2);
+            
+        
+
+        marker_4f6af50803ac32844ab1030d35c8d921.bindPopup(popup_59575c28a72ab6cb6f5f43215d282460)
+        ;
+
+        
+    
+    
+                marker_4f6af50803ac32844ab1030d35c8d921.setIcon(icon_8dac0c12a43185786c2ac808c51bca09);
+            
+    
+            var marker_f8d0d8e999f0fd9156a1e3ffd3aac87d = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_00995ad87c86eafe5f54bfc8fdd471b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57fe6f59d5957ae4f54654c27a6dc4ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71c0f872e689622728e9f250fae0bbeb = $(`<div id="html_71c0f872e689622728e9f250fae0bbeb" style="width: 100.0%; height: 100.0%;">Transit User from SW Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_57fe6f59d5957ae4f54654c27a6dc4ef.setContent(html_71c0f872e689622728e9f250fae0bbeb);
+            
+        
+
+        marker_f8d0d8e999f0fd9156a1e3ffd3aac87d.bindPopup(popup_57fe6f59d5957ae4f54654c27a6dc4ef)
+        ;
+
+        
+    
+    
+                marker_f8d0d8e999f0fd9156a1e3ffd3aac87d.setIcon(icon_00995ad87c86eafe5f54bfc8fdd471b0);
+            
+    
+            var marker_c198c313141183de6db80be44d500418 = L.marker(
+                [51.1735731, -114.1207416],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_cd1c832cc727e206d9c6a6356c053673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a73cc1b510d21186bb568960c5a3501 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d15e6bc9ffb230b7b60fc6d8ea59e62 = $(`<div id="html_5d15e6bc9ffb230b7b60fc6d8ea59e62" style="width: 100.0%; height: 100.0%;">Transit User from Evanston, NW calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_5a73cc1b510d21186bb568960c5a3501.setContent(html_5d15e6bc9ffb230b7b60fc6d8ea59e62);
+            
+        
+
+        marker_c198c313141183de6db80be44d500418.bindPopup(popup_5a73cc1b510d21186bb568960c5a3501)
+        ;
+
+        
+    
+    
+                marker_c198c313141183de6db80be44d500418.setIcon(icon_cd1c832cc727e206d9c6a6356c053673);
+            
+    
+            var marker_cd7f2290a17741f3501f635d715c2f59 = L.marker(
+                [51.1771597, -114.1632737],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_27a914258e6ac5349f1040dfb6afb9bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1e64c293979371fb40bd4dba4433798 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_686a640103b33099618a647df9a41ea6 = $(`<div id="html_686a640103b33099618a647df9a41ea6" style="width: 100.0%; height: 100.0%;">Transit User from nolan hill<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_a1e64c293979371fb40bd4dba4433798.setContent(html_686a640103b33099618a647df9a41ea6);
+            
+        
+
+        marker_cd7f2290a17741f3501f635d715c2f59.bindPopup(popup_a1e64c293979371fb40bd4dba4433798)
+        ;
+
+        
+    
+    
+                marker_cd7f2290a17741f3501f635d715c2f59.setIcon(icon_27a914258e6ac5349f1040dfb6afb9bc);
+            
+    
+            var marker_e4d2e664615f8a4d5d830ef14e96355e = L.marker(
+                [51.0293578, -114.0865186],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_06aab7ecd782eed0a815ea469d6bb1be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ceb61cd85c2d7bd2aef71e1ff6862783 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d27ee910ea42374eb0c258c97bc11b0 = $(`<div id="html_8d27ee910ea42374eb0c258c97bc11b0" style="width: 100.0%; height: 100.0%;">Transit User from Upper Mount Royal<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_ceb61cd85c2d7bd2aef71e1ff6862783.setContent(html_8d27ee910ea42374eb0c258c97bc11b0);
+            
+        
+
+        marker_e4d2e664615f8a4d5d830ef14e96355e.bindPopup(popup_ceb61cd85c2d7bd2aef71e1ff6862783)
+        ;
+
+        
+    
+    
+                marker_e4d2e664615f8a4d5d830ef14e96355e.setIcon(icon_06aab7ecd782eed0a815ea469d6bb1be);
+            
+    
+            var marker_e77b17443268225739d5414c561dbfe3 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_417d22672f3496407c2fc6985684308c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5eca3cfa644d2082c8fb40d6416a932 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_278ddcd972a717a7d89b672d6b982c71 = $(`<div id="html_278ddcd972a717a7d89b672d6b982c71" style="width: 100.0%; height: 100.0%;">Transit User from NW Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_a5eca3cfa644d2082c8fb40d6416a932.setContent(html_278ddcd972a717a7d89b672d6b982c71);
+            
+        
+
+        marker_e77b17443268225739d5414c561dbfe3.bindPopup(popup_a5eca3cfa644d2082c8fb40d6416a932)
+        ;
+
+        
+    
+    
+                marker_e77b17443268225739d5414c561dbfe3.setIcon(icon_417d22672f3496407c2fc6985684308c);
+            
+    
+            var marker_f3f67f2e38fcc9fb5dc30b660b87c550 = L.marker(
+                [51.044845, -113.9901949],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_fea5c9005e65bf61d5e245be574e0c4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9636e9a1e5775d30745e8569f76d65b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f08c9388425538cf173697aa01b703ed = $(`<div id="html_f08c9388425538cf173697aa01b703ed" style="width: 100.0%; height: 100.0%;">Transit User from Radisson Heights<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_9636e9a1e5775d30745e8569f76d65b0.setContent(html_f08c9388425538cf173697aa01b703ed);
+            
+        
+
+        marker_f3f67f2e38fcc9fb5dc30b660b87c550.bindPopup(popup_9636e9a1e5775d30745e8569f76d65b0)
+        ;
+
+        
+    
+    
+                marker_f3f67f2e38fcc9fb5dc30b660b87c550.setIcon(icon_fea5c9005e65bf61d5e245be574e0c4e);
+            
+    
+            var marker_f252c72b79588e16da9ec364b3212603 = L.marker(
+                [50.9591032, -114.1246491],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_0dba9ad4c875440f691bcfa664335410 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13c02b0a8abf69534cbeea8748a388c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55ffb086be107e1c5a3886204a01c257 = $(`<div id="html_55ffb086be107e1c5a3886204a01c257" style="width: 100.0%; height: 100.0%;">Transit User from Cedarbrae SW<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_13c02b0a8abf69534cbeea8748a388c3.setContent(html_55ffb086be107e1c5a3886204a01c257);
+            
+        
+
+        marker_f252c72b79588e16da9ec364b3212603.bindPopup(popup_13c02b0a8abf69534cbeea8748a388c3)
+        ;
+
+        
+    
+    
+                marker_f252c72b79588e16da9ec364b3212603.setIcon(icon_0dba9ad4c875440f691bcfa664335410);
+            
+    
+            var marker_ededa3e8fb482f6af8ea262427a1317b = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_d419809b106a51eb8be93c0d3f04f260 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da30df98cb5be5109c0169fe48a0cd76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bb2cc0ac399b6dfe272972ec7481693 = $(`<div id="html_2bb2cc0ac399b6dfe272972ec7481693" style="width: 100.0%; height: 100.0%;">Transit User from Tuscany<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_da30df98cb5be5109c0169fe48a0cd76.setContent(html_2bb2cc0ac399b6dfe272972ec7481693);
+            
+        
+
+        marker_ededa3e8fb482f6af8ea262427a1317b.bindPopup(popup_da30df98cb5be5109c0169fe48a0cd76)
+        ;
+
+        
+    
+    
+                marker_ededa3e8fb482f6af8ea262427a1317b.setIcon(icon_d419809b106a51eb8be93c0d3f04f260);
+            
+    
+            var marker_003c24a9db113294ca76924db1a68fbe = L.marker(
+                [51.0063354, -114.0777846],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_d96c4d323741621f169377ecf84737bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2f6b6078622ba325d5f66dc0135b329 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88f35d8c50b0b6174492c63e4e5a4e62 = $(`<div id="html_88f35d8c50b0b6174492c63e4e5a4e62" style="width: 100.0%; height: 100.0%;">Transit User from Windsor Park, SW<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_b2f6b6078622ba325d5f66dc0135b329.setContent(html_88f35d8c50b0b6174492c63e4e5a4e62);
+            
+        
+
+        marker_003c24a9db113294ca76924db1a68fbe.bindPopup(popup_b2f6b6078622ba325d5f66dc0135b329)
+        ;
+
+        
+    
+    
+                marker_003c24a9db113294ca76924db1a68fbe.setIcon(icon_d96c4d323741621f169377ecf84737bd);
+            
+    
+            var marker_6b0d49cabf71aea4e101d513e891a2ff = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_ae927a067775a379475579f3d10d716c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aae584714dcf4f830a3135af04ef5bcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a56d02632211bb4cd94b9ad75a91eda = $(`<div id="html_5a56d02632211bb4cd94b9ad75a91eda" style="width: 100.0%; height: 100.0%;">Transit User from NE<br>Mode: Driving and Transit</div>`)[0];
+                popup_aae584714dcf4f830a3135af04ef5bcc.setContent(html_5a56d02632211bb4cd94b9ad75a91eda);
+            
+        
+
+        marker_6b0d49cabf71aea4e101d513e891a2ff.bindPopup(popup_aae584714dcf4f830a3135af04ef5bcc)
+        ;
+
+        
+    
+    
+                marker_6b0d49cabf71aea4e101d513e891a2ff.setIcon(icon_ae927a067775a379475579f3d10d716c);
+            
+    
+            var marker_3675df0de27671217080d3dede36aa87 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_01a3762754382203ee7a642f72c8d9e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26255f1783aceceda8fc45904a7b7db5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90ec1aae1fd775c5174b83665da43847 = $(`<div id="html_90ec1aae1fd775c5174b83665da43847" style="width: 100.0%; height: 100.0%;">Transit User from NE Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_26255f1783aceceda8fc45904a7b7db5.setContent(html_90ec1aae1fd775c5174b83665da43847);
+            
+        
+
+        marker_3675df0de27671217080d3dede36aa87.bindPopup(popup_26255f1783aceceda8fc45904a7b7db5)
+        ;
+
+        
+    
+    
+                marker_3675df0de27671217080d3dede36aa87.setIcon(icon_01a3762754382203ee7a642f72c8d9e9);
+            
+    
+            var marker_67f1391e9e599f5d3684cca347e78eec = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_6fb82e51dd9245210231e7996baf48a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c8563c5f9f4f65fd0029da1d356accb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cd870f29680cbc1185fd50cd7a73a89 = $(`<div id="html_4cd870f29680cbc1185fd50cd7a73a89" style="width: 100.0%; height: 100.0%;">Transit User from SW Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_0c8563c5f9f4f65fd0029da1d356accb.setContent(html_4cd870f29680cbc1185fd50cd7a73a89);
+            
+        
+
+        marker_67f1391e9e599f5d3684cca347e78eec.bindPopup(popup_0c8563c5f9f4f65fd0029da1d356accb)
+        ;
+
+        
+    
+    
+                marker_67f1391e9e599f5d3684cca347e78eec.setIcon(icon_6fb82e51dd9245210231e7996baf48a8);
+            
+    
+            var marker_bab9293972190aa03b52e0cab2f577d0 = L.marker(
+                [51.0640427, -114.1472491],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_9d73df42e57cd4a37e3367a6d620988a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b6153ba7809b522ff38453917df73d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac5a2facaabc6770d56232cddd157f3c = $(`<div id="html_ac5a2facaabc6770d56232cddd157f3c" style="width: 100.0%; height: 100.0%;">Transit User from NW Calgary, bowness<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_8b6153ba7809b522ff38453917df73d4.setContent(html_ac5a2facaabc6770d56232cddd157f3c);
+            
+        
+
+        marker_bab9293972190aa03b52e0cab2f577d0.bindPopup(popup_8b6153ba7809b522ff38453917df73d4)
+        ;
+
+        
+    
+    
+                marker_bab9293972190aa03b52e0cab2f577d0.setIcon(icon_9d73df42e57cd4a37e3367a6d620988a);
+            
+    
+            var marker_184e803d27cd2b7cb68e78938a590a39 = L.marker(
+                [51.0204457, -114.1891083],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_49fc2bf93cbc9a24f208d37cdd889408 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91a3a172ed2339bd48b12b9172501824 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff01081c1abc23bfbf3f31386f972dd3 = $(`<div id="html_ff01081c1abc23bfbf3f31386f972dd3" style="width: 100.0%; height: 100.0%;">Transit User from Springbank Hill (SW)<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_91a3a172ed2339bd48b12b9172501824.setContent(html_ff01081c1abc23bfbf3f31386f972dd3);
+            
+        
+
+        marker_184e803d27cd2b7cb68e78938a590a39.bindPopup(popup_91a3a172ed2339bd48b12b9172501824)
+        ;
+
+        
+    
+    
+                marker_184e803d27cd2b7cb68e78938a590a39.setIcon(icon_49fc2bf93cbc9a24f208d37cdd889408);
+            
+    
+            var marker_ea0314f65719ac5b54dfe046f84478d4 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_036f5eb9562ed8000644e3d3a2c3051d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f3afe1c6cebf219d78f3fd644b6d80f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_781086fb24a67287ea962b6ba9f6f5c8 = $(`<div id="html_781086fb24a67287ea962b6ba9f6f5c8" style="width: 100.0%; height: 100.0%;">Transit User from Tuscany<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_9f3afe1c6cebf219d78f3fd644b6d80f.setContent(html_781086fb24a67287ea962b6ba9f6f5c8);
+            
+        
+
+        marker_ea0314f65719ac5b54dfe046f84478d4.bindPopup(popup_9f3afe1c6cebf219d78f3fd644b6d80f)
+        ;
+
+        
+    
+    
+                marker_ea0314f65719ac5b54dfe046f84478d4.setIcon(icon_036f5eb9562ed8000644e3d3a2c3051d);
+            
+    
+            var marker_5aee1b0cc3725d85e4648c58e78b18f0 = L.marker(
+                [51.084919, -114.1323225],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_48056e9bcea5fa49ab83da9f6b08b86c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1fef3ee771aeaadf6af204d6b230cb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ecfc0e5042a51befcc045d85c2ebaea = $(`<div id="html_0ecfc0e5042a51befcc045d85c2ebaea" style="width: 100.0%; height: 100.0%;">Transit User from Varsity/Brentwood<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_d1fef3ee771aeaadf6af204d6b230cb9.setContent(html_0ecfc0e5042a51befcc045d85c2ebaea);
+            
+        
+
+        marker_5aee1b0cc3725d85e4648c58e78b18f0.bindPopup(popup_d1fef3ee771aeaadf6af204d6b230cb9)
+        ;
+
+        
+    
+    
+                marker_5aee1b0cc3725d85e4648c58e78b18f0.setIcon(icon_48056e9bcea5fa49ab83da9f6b08b86c);
+            
+    
+            var marker_d8ac82a0b863967cfba8ee81253c0a03 = L.marker(
+                [51.166383, -114.1418532],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_19ef1fe8a404da0a869a7d06966e3f7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c24ee313fe5794da67379ef031e5b025 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45bb1fc5d985619ea3d1a01ab86e2430 = $(`<div id="html_45bb1fc5d985619ea3d1a01ab86e2430" style="width: 100.0%; height: 100.0%;">Transit User from Kincora, NW Calgary<br>Mode: Driving and Transit</div>`)[0];
+                popup_c24ee313fe5794da67379ef031e5b025.setContent(html_45bb1fc5d985619ea3d1a01ab86e2430);
+            
+        
+
+        marker_d8ac82a0b863967cfba8ee81253c0a03.bindPopup(popup_c24ee313fe5794da67379ef031e5b025)
+        ;
+
+        
+    
+    
+                marker_d8ac82a0b863967cfba8ee81253c0a03.setIcon(icon_19ef1fe8a404da0a869a7d06966e3f7b);
+            
+    
+            var marker_7e4c35f288bf75aa23fdfb8b52df0ba4 = L.marker(
+                [51.0598811, -113.9489467],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_5fac51bdd1d5820d34cf682ce8bad014 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_872d6ae4aac366867b11ce67f0d2fb10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ba7ad6d682e290d1e90928a26f685a5 = $(`<div id="html_0ba7ad6d682e290d1e90928a26f685a5" style="width: 100.0%; height: 100.0%;">Transit User from Marlborough Park<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_872d6ae4aac366867b11ce67f0d2fb10.setContent(html_0ba7ad6d682e290d1e90928a26f685a5);
+            
+        
+
+        marker_7e4c35f288bf75aa23fdfb8b52df0ba4.bindPopup(popup_872d6ae4aac366867b11ce67f0d2fb10)
+        ;
+
+        
+    
+    
+                marker_7e4c35f288bf75aa23fdfb8b52df0ba4.setIcon(icon_5fac51bdd1d5820d34cf682ce8bad014);
+            
+    
+            var marker_1eee30c667b5b629cb109d33374ebef9 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_1def6470678eb9ba95fa7e49e78ce500 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b7218d0f670180ad98660c47c8adc72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01ece36b69fe08a290196b4ff644222b = $(`<div id="html_01ece36b69fe08a290196b4ff644222b" style="width: 100.0%; height: 100.0%;">Transit User from NW Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_4b7218d0f670180ad98660c47c8adc72.setContent(html_01ece36b69fe08a290196b4ff644222b);
+            
+        
+
+        marker_1eee30c667b5b629cb109d33374ebef9.bindPopup(popup_4b7218d0f670180ad98660c47c8adc72)
+        ;
+
+        
+    
+    
+                marker_1eee30c667b5b629cb109d33374ebef9.setIcon(icon_1def6470678eb9ba95fa7e49e78ce500);
+            
+    
+            var marker_663163563e001cf7df7c32742a695f24 = L.marker(
+                [51.1613607, -114.124535],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_0d1e359e689ce8103a43e0961d08c5f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7223ead44182f64a16ccfa79a3a897ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5f8440b30c5865f28073463d1de39a5 = $(`<div id="html_a5f8440b30c5865f28073463d1de39a5" style="width: 100.0%; height: 100.0%;">Transit User from Evanston Nw Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_7223ead44182f64a16ccfa79a3a897ee.setContent(html_a5f8440b30c5865f28073463d1de39a5);
+            
+        
+
+        marker_663163563e001cf7df7c32742a695f24.bindPopup(popup_7223ead44182f64a16ccfa79a3a897ee)
+        ;
+
+        
+    
+    
+                marker_663163563e001cf7df7c32742a695f24.setIcon(icon_0d1e359e689ce8103a43e0961d08c5f3);
+            
+    
+            var marker_20c2e76befad18c177ff7c25a5db42cc = L.marker(
+                [51.0464963, -114.0506433],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_6584fa7ac6c0fb8832468aa0b2355b8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72a5d5c84c89b12d444ce7d6a0f81236 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98c5bf9299d97f608f8235930ffb8be8 = $(`<div id="html_98c5bf9299d97f608f8235930ffb8be8" style="width: 100.0%; height: 100.0%;">Transit User from Downtown<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_72a5d5c84c89b12d444ce7d6a0f81236.setContent(html_98c5bf9299d97f608f8235930ffb8be8);
+            
+        
+
+        marker_20c2e76befad18c177ff7c25a5db42cc.bindPopup(popup_72a5d5c84c89b12d444ce7d6a0f81236)
+        ;
+
+        
+    
+    
+                marker_20c2e76befad18c177ff7c25a5db42cc.setIcon(icon_6584fa7ac6c0fb8832468aa0b2355b8d);
+            
+    
+            var marker_925c31cc9283332482f7a528ebca93c8 = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_5ec2b25439dedd1dcfcbd5583c2d119b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4aa65453dc0a1f7df02e3c927c68b7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33b833ca364821af28061bfece920e82 = $(`<div id="html_33b833ca364821af28061bfece920e82" style="width: 100.0%; height: 100.0%;">Transit User from NE<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_c4aa65453dc0a1f7df02e3c927c68b7f.setContent(html_33b833ca364821af28061bfece920e82);
+            
+        
+
+        marker_925c31cc9283332482f7a528ebca93c8.bindPopup(popup_c4aa65453dc0a1f7df02e3c927c68b7f)
+        ;
+
+        
+    
+    
+                marker_925c31cc9283332482f7a528ebca93c8.setIcon(icon_5ec2b25439dedd1dcfcbd5583c2d119b);
+            
+    
+            var marker_031575ac0e0a8a51e01e9ed544cce719 = L.marker(
+                [50.9007131, -114.1105152],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_cba446c733ed611601662fc9519f20d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b865f70897c30b274c018033f7506b9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_710075168f153c97fef6a8c9dafa5896 = $(`<div id="html_710075168f153c97fef6a8c9dafa5896" style="width: 100.0%; height: 100.0%;">Transit User from Bridlewood<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_b865f70897c30b274c018033f7506b9d.setContent(html_710075168f153c97fef6a8c9dafa5896);
+            
+        
+
+        marker_031575ac0e0a8a51e01e9ed544cce719.bindPopup(popup_b865f70897c30b274c018033f7506b9d)
+        ;
+
+        
+    
+    
+                marker_031575ac0e0a8a51e01e9ed544cce719.setIcon(icon_cba446c733ed611601662fc9519f20d5);
+            
+    
+            var marker_5ebf01468cc41920d9e5f769ddb8b933 = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_4d20452f5eece719693cc9863913e749 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a30ccd9b5686607a47cebcf32dfffb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0844bd15994bef10531a5fbcbd91b02 = $(`<div id="html_d0844bd15994bef10531a5fbcbd91b02" style="width: 100.0%; height: 100.0%;">Transit User from SW Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_4a30ccd9b5686607a47cebcf32dfffb1.setContent(html_d0844bd15994bef10531a5fbcbd91b02);
+            
+        
+
+        marker_5ebf01468cc41920d9e5f769ddb8b933.bindPopup(popup_4a30ccd9b5686607a47cebcf32dfffb1)
+        ;
+
+        
+    
+    
+                marker_5ebf01468cc41920d9e5f769ddb8b933.setIcon(icon_4d20452f5eece719693cc9863913e749);
+            
+    
+            var marker_62e47484ef937c8f1e5b5ee973328651 = L.marker(
+                [50.8906047, -113.9595647],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_ebd5cd9c15a0632c7b4c4349242220d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d097800cf30e7c1fc345dae537b077f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1b41dfcae4ddbfe71d12ab669159763 = $(`<div id="html_b1b41dfcae4ddbfe71d12ab669159763" style="width: 100.0%; height: 100.0%;">Transit User from Auburn bay<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_d097800cf30e7c1fc345dae537b077f6.setContent(html_b1b41dfcae4ddbfe71d12ab669159763);
+            
+        
+
+        marker_62e47484ef937c8f1e5b5ee973328651.bindPopup(popup_d097800cf30e7c1fc345dae537b077f6)
+        ;
+
+        
+    
+    
+                marker_62e47484ef937c8f1e5b5ee973328651.setIcon(icon_ebd5cd9c15a0632c7b4c4349242220d4);
+            
+    
+            var marker_84b49baf607a662e7b975ebb186f8e16 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_a2056860a558885bb1d0ce8283eaedbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73ac7b18b52da1c5eb95846bde53e8fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b458939924322f9efc46168c05eab8f9 = $(`<div id="html_b458939924322f9efc46168c05eab8f9" style="width: 100.0%; height: 100.0%;">Transit User from NE Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_73ac7b18b52da1c5eb95846bde53e8fd.setContent(html_b458939924322f9efc46168c05eab8f9);
+            
+        
+
+        marker_84b49baf607a662e7b975ebb186f8e16.bindPopup(popup_73ac7b18b52da1c5eb95846bde53e8fd)
+        ;
+
+        
+    
+    
+                marker_84b49baf607a662e7b975ebb186f8e16.setIcon(icon_a2056860a558885bb1d0ce8283eaedbf);
+            
+    
+            var marker_9e0549045a5e47a34d8a166d5aa08964 = L.marker(
+                [51.0380285, -114.0754742],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_ae3b83004f9d1d533a7cd5f625866e1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1258fc34dee8df8c2cdf995c5f415dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55ab63413ddd162beaaccd7e35b169e1 = $(`<div id="html_55ab63413ddd162beaaccd7e35b169e1" style="width: 100.0%; height: 100.0%;">Transit User from 17th Ave SW<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_c1258fc34dee8df8c2cdf995c5f415dc.setContent(html_55ab63413ddd162beaaccd7e35b169e1);
+            
+        
+
+        marker_9e0549045a5e47a34d8a166d5aa08964.bindPopup(popup_c1258fc34dee8df8c2cdf995c5f415dc)
+        ;
+
+        
+    
+    
+                marker_9e0549045a5e47a34d8a166d5aa08964.setIcon(icon_ae3b83004f9d1d533a7cd5f625866e1a);
+            
+    
+            var marker_1aa15226fce7cfd45031ed2f9624c60f = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_c1c1d9487402164deb1cc3d43b819519 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced4dfd57baa5ba4adb550c56429165a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b38be27a663fabc9819b10ed3ddf500 = $(`<div id="html_0b38be27a663fabc9819b10ed3ddf500" style="width: 100.0%; height: 100.0%;">Transit User from NW Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_ced4dfd57baa5ba4adb550c56429165a.setContent(html_0b38be27a663fabc9819b10ed3ddf500);
+            
+        
+
+        marker_1aa15226fce7cfd45031ed2f9624c60f.bindPopup(popup_ced4dfd57baa5ba4adb550c56429165a)
+        ;
+
+        
+    
+    
+                marker_1aa15226fce7cfd45031ed2f9624c60f.setIcon(icon_c1c1d9487402164deb1cc3d43b819519);
+            
+    
+            var marker_fbca6e5af958f89324bf75297971f8be = L.marker(
+                [51.0588216, -114.2042544],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_0ae18c777c00c30366e51ee3a54869e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0baaa48a955bffa21cdc2a7865aaec91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21818a208f8437af057d06d2e82ba3ee = $(`<div id="html_21818a208f8437af057d06d2e82ba3ee" style="width: 100.0%; height: 100.0%;">Transit User from West Springs<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_0baaa48a955bffa21cdc2a7865aaec91.setContent(html_21818a208f8437af057d06d2e82ba3ee);
+            
+        
+
+        marker_fbca6e5af958f89324bf75297971f8be.bindPopup(popup_0baaa48a955bffa21cdc2a7865aaec91)
+        ;
+
+        
+    
+    
+                marker_fbca6e5af958f89324bf75297971f8be.setIcon(icon_0ae18c777c00c30366e51ee3a54869e3);
+            
+    
+            var marker_5e3e12965a18d30924e261e8395cdcd1 = L.marker(
+                [51.1178849, -114.2195667],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_f9b249505ae50befac542f039038da0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e594d0a903c952302314ec714584c7ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab3937341db8909c79802000bc501ca5 = $(`<div id="html_ab3937341db8909c79802000bc501ca5" style="width: 100.0%; height: 100.0%;">Transit User from Home<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_e594d0a903c952302314ec714584c7ce.setContent(html_ab3937341db8909c79802000bc501ca5);
+            
+        
+
+        marker_5e3e12965a18d30924e261e8395cdcd1.bindPopup(popup_e594d0a903c952302314ec714584c7ce)
+        ;
+
+        
+    
+    
+                marker_5e3e12965a18d30924e261e8395cdcd1.setIcon(icon_f9b249505ae50befac542f039038da0f);
+            
+    
+            var marker_454c12f0a17e9c8e37d7adadb9680dae = L.marker(
+                [51.1584472, -114.1330259],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_b679247f7b34e8a639dd38eb5bba3819 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_606d0f33735c8272c61d4d1611ed2229 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db0c076057bb93026a8488e2d179116b = $(`<div id="html_db0c076057bb93026a8488e2d179116b" style="width: 100.0%; height: 100.0%;">Transit User from Kincora<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_606d0f33735c8272c61d4d1611ed2229.setContent(html_db0c076057bb93026a8488e2d179116b);
+            
+        
+
+        marker_454c12f0a17e9c8e37d7adadb9680dae.bindPopup(popup_606d0f33735c8272c61d4d1611ed2229)
+        ;
+
+        
+    
+    
+                marker_454c12f0a17e9c8e37d7adadb9680dae.setIcon(icon_b679247f7b34e8a639dd38eb5bba3819);
+            
+    
+            var marker_f517de45045a39d85be067ec0b27bb9f = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_4b525ad2efdb8976134d74878cb0385c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af010316a4135c92047924393efe2ed0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b8fe47b775e437216e053552badf987 = $(`<div id="html_1b8fe47b775e437216e053552badf987" style="width: 100.0%; height: 100.0%;">Transit User from NE Calgary<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_af010316a4135c92047924393efe2ed0.setContent(html_1b8fe47b775e437216e053552badf987);
+            
+        
+
+        marker_f517de45045a39d85be067ec0b27bb9f.bindPopup(popup_af010316a4135c92047924393efe2ed0)
+        ;
+
+        
+    
+    
+                marker_f517de45045a39d85be067ec0b27bb9f.setIcon(icon_4b525ad2efdb8976134d74878cb0385c);
+            
+    
+            var marker_b523cc8efa2b1c5b41517219f23a77bc = L.marker(
+                [50.9207264, -113.9470847],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_e4b77ff24c34c39dc76c049079987721 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcfda70ea2774f3214b54513fe7a9e6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_784240d0c1c8a33cf11b6f102a3a088c = $(`<div id="html_784240d0c1c8a33cf11b6f102a3a088c" style="width: 100.0%; height: 100.0%;">Transit User from New Brighton<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_bcfda70ea2774f3214b54513fe7a9e6d.setContent(html_784240d0c1c8a33cf11b6f102a3a088c);
+            
+        
+
+        marker_b523cc8efa2b1c5b41517219f23a77bc.bindPopup(popup_bcfda70ea2774f3214b54513fe7a9e6d)
+        ;
+
+        
+    
+    
+                marker_b523cc8efa2b1c5b41517219f23a77bc.setIcon(icon_e4b77ff24c34c39dc76c049079987721);
+            
+    
+            var marker_9a7e9b3b77e5e272ec2280dd3170099b = L.marker(
+                [51.0399531, -114.1365332],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_eff2655dd479a874a9f4beedafd2de74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e77cfbd463537732e88bebaf84957d68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d648bbab73c52c081bfc61f35400952 = $(`<div id="html_5d648bbab73c52c081bfc61f35400952" style="width: 100.0%; height: 100.0%;">Transit User from Westbrook<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_e77cfbd463537732e88bebaf84957d68.setContent(html_5d648bbab73c52c081bfc61f35400952);
+            
+        
+
+        marker_9a7e9b3b77e5e272ec2280dd3170099b.bindPopup(popup_e77cfbd463537732e88bebaf84957d68)
+        ;
+
+        
+    
+    
+                marker_9a7e9b3b77e5e272ec2280dd3170099b.setIcon(icon_eff2655dd479a874a9f4beedafd2de74);
+            
+    
+            var marker_f6e60a03a19910966a292ad4af6a94f3 = L.marker(
+                [51.0930748, -114.1260514],
+                {
+}
+            ).addTo(marker_cluster_1af21aa5c099a721f70f935950178e2a);
+        
+    
+            var icon_ea20d608444ef46327aeef875ced9ecd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f46a3458908f0ca1dcc5576ae3170583 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fa1692fd7740996120b2d8e1676f9fa = $(`<div id="html_7fa1692fd7740996120b2d8e1676f9fa" style="width: 100.0%; height: 100.0%;">Transit User from Brentwood<br>Mode: Public Transit (Bus/Train)</div>`)[0];
+                popup_f46a3458908f0ca1dcc5576ae3170583.setContent(html_7fa1692fd7740996120b2d8e1676f9fa);
+            
+        
+
+        marker_f6e60a03a19910966a292ad4af6a94f3.bindPopup(popup_f46a3458908f0ca1dcc5576ae3170583)
+        ;
+
+        
+    
+    
+                marker_f6e60a03a19910966a292ad4af6a94f3.setIcon(icon_ea20d608444ef46327aeef875ced9ecd);
+            
+    
+            marker_cluster_1af21aa5c099a721f70f935950178e2a.addTo(map_9885e211dd7b89b65506a184ee85d4ef);
+        
+</script>
+</html>

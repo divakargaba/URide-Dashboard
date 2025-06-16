@@ -1,0 +1,3585 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_859171e2f48a6ad788357ddc2589df13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_859171e2f48a6ad788357ddc2589df13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_859171e2f48a6ad788357ddc2589df13 = L.map(
+                "map_859171e2f48a6ad788357ddc2589df13",
+                {
+                    center: [51.0782, -114.1336],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb6d7b7b59cee5a025cee71c3059a78d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eb6d7b7b59cee5a025cee71c3059a78d.addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var marker_cluster_d5bccda037e44e930a889b8876882649 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_eb3aae827d1a3b5b9f330afd92dcc02c = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_703f8d7b1351104fea126c0f41f0f58f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e141013cb99310fbba84ba742ee3137c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abd13ce7f32a20b50866eccbb2dc4728 = $(`<div id="html_abd13ce7f32a20b50866eccbb2dc4728" style="width: 100.0%; height: 100.0%;">DRIVER<br>Nw<br>Mode: driving</div>`)[0];
+                popup_e141013cb99310fbba84ba742ee3137c.setContent(html_abd13ce7f32a20b50866eccbb2dc4728);
+            
+        
+
+        marker_eb3aae827d1a3b5b9f330afd92dcc02c.bindPopup(popup_e141013cb99310fbba84ba742ee3137c)
+        ;
+
+        
+    
+    
+                marker_eb3aae827d1a3b5b9f330afd92dcc02c.setIcon(icon_703f8d7b1351104fea126c0f41f0f58f);
+            
+    
+            var marker_5b4530e10bdffe50f858183670776bf9 = L.marker(
+                [50.9301743, -114.016583],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_173e37e2b7e1d0a7f9b2e6d4c465e1e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfb1cb61081c4115632f403380a45050 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fb4025c20a6e5f85ea69aefa20ad5bb = $(`<div id="html_9fb4025c20a6e5f85ea69aefa20ad5bb" style="width: 100.0%; height: 100.0%;">DRIVER<br>Deer Ridge SE<br>Mode: driving</div>`)[0];
+                popup_cfb1cb61081c4115632f403380a45050.setContent(html_9fb4025c20a6e5f85ea69aefa20ad5bb);
+            
+        
+
+        marker_5b4530e10bdffe50f858183670776bf9.bindPopup(popup_cfb1cb61081c4115632f403380a45050)
+        ;
+
+        
+    
+    
+                marker_5b4530e10bdffe50f858183670776bf9.setIcon(icon_173e37e2b7e1d0a7f9b2e6d4c465e1e3);
+            
+    
+            var marker_e1a92da1c9301c0da49a6cda7a2f1805 = L.marker(
+                [51.1129005, -114.1448609],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_574bd6394aedb415b4a9baab27eda4dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e28ee0012d390a4756f11edca5079ad0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d1c88269acb1246340a541154448273 = $(`<div id="html_1d1c88269acb1246340a541154448273" style="width: 100.0%; height: 100.0%;">DRIVER<br>Edgemont NW<br>Mode: driving</div>`)[0];
+                popup_e28ee0012d390a4756f11edca5079ad0.setContent(html_1d1c88269acb1246340a541154448273);
+            
+        
+
+        marker_e1a92da1c9301c0da49a6cda7a2f1805.bindPopup(popup_e28ee0012d390a4756f11edca5079ad0)
+        ;
+
+        
+    
+    
+                marker_e1a92da1c9301c0da49a6cda7a2f1805.setIcon(icon_574bd6394aedb415b4a9baab27eda4dc);
+            
+    
+            var marker_0447944ca4dc265d8b7c258cf432a22a = L.marker(
+                [50.988422, -114.0092464],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_f8da6d4cae887f000946f186b03cabb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c612a4e6d9ddb97751ebbddf736f3e3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0ee0d656940c5c3a1ca9101bea05441 = $(`<div id="html_e0ee0d656940c5c3a1ca9101bea05441" style="width: 100.0%; height: 100.0%;">DRIVER<br>Ogden<br>Mode: driving</div>`)[0];
+                popup_c612a4e6d9ddb97751ebbddf736f3e3a.setContent(html_e0ee0d656940c5c3a1ca9101bea05441);
+            
+        
+
+        marker_0447944ca4dc265d8b7c258cf432a22a.bindPopup(popup_c612a4e6d9ddb97751ebbddf736f3e3a)
+        ;
+
+        
+    
+    
+                marker_0447944ca4dc265d8b7c258cf432a22a.setIcon(icon_f8da6d4cae887f000946f186b03cabb5);
+            
+    
+            var marker_9f23733c03e97e84061abedfd7d5c068 = L.marker(
+                [50.8565939, -114.0002516],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_e1a8cf3a495345e2ae593248ad831b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec32f332ca73b58e96958f99d6975ef7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_779375dba8826b41bc4c9a2098181302 = $(`<div id="html_779375dba8826b41bc4c9a2098181302" style="width: 100.0%; height: 100.0%;">DRIVER<br>Legacy SE<br>Mode: driving</div>`)[0];
+                popup_ec32f332ca73b58e96958f99d6975ef7.setContent(html_779375dba8826b41bc4c9a2098181302);
+            
+        
+
+        marker_9f23733c03e97e84061abedfd7d5c068.bindPopup(popup_ec32f332ca73b58e96958f99d6975ef7)
+        ;
+
+        
+    
+    
+                marker_9f23733c03e97e84061abedfd7d5c068.setIcon(icon_e1a8cf3a495345e2ae593248ad831b97);
+            
+    
+            var marker_5f3f0bc6c495807c4b9ca9fe6ac79f22 = L.marker(
+                [50.9176132, -114.1147339],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_31dabcdef807d5aeaed6f0d2f19683b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02b113798e0120e48742084b12e0044d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a570c7e8ccb75e748c71430ec46e51f = $(`<div id="html_8a570c7e8ccb75e748c71430ec46e51f" style="width: 100.0%; height: 100.0%;">DRIVER<br>evergreen<br>Mode: driving</div>`)[0];
+                popup_02b113798e0120e48742084b12e0044d.setContent(html_8a570c7e8ccb75e748c71430ec46e51f);
+            
+        
+
+        marker_5f3f0bc6c495807c4b9ca9fe6ac79f22.bindPopup(popup_02b113798e0120e48742084b12e0044d)
+        ;
+
+        
+    
+    
+                marker_5f3f0bc6c495807c4b9ca9fe6ac79f22.setIcon(icon_31dabcdef807d5aeaed6f0d2f19683b6);
+            
+    
+            var marker_b9bd20741c9e2957a2eb913eab10bce1 = L.marker(
+                [51.0930748, -114.1260514],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_c779e3efd236694d5c41718f8d64089e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3f1b72e9870b937beda4a558b34b846 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4558746530960fc64ed136a78465744b = $(`<div id="html_4558746530960fc64ed136a78465744b" style="width: 100.0%; height: 100.0%;">DRIVER<br>Brentwood<br>Mode: driving</div>`)[0];
+                popup_f3f1b72e9870b937beda4a558b34b846.setContent(html_4558746530960fc64ed136a78465744b);
+            
+        
+
+        marker_b9bd20741c9e2957a2eb913eab10bce1.bindPopup(popup_f3f1b72e9870b937beda4a558b34b846)
+        ;
+
+        
+    
+    
+                marker_b9bd20741c9e2957a2eb913eab10bce1.setIcon(icon_c779e3efd236694d5c41718f8d64089e);
+            
+    
+            var marker_1d31b22ed5a2e5a723b2cd6f6f2ec434 = L.marker(
+                [51.145091, -114.1757304],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_7a5c358f65a07e94d9f7d71b0165c634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_677e30ff6c881f7966a25f1aa2b99fb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32ea6438f95770ff7a21ac28d686d22a = $(`<div id="html_32ea6438f95770ff7a21ac28d686d22a" style="width: 100.0%; height: 100.0%;">DRIVER<br>Citadel<br>Mode: driving</div>`)[0];
+                popup_677e30ff6c881f7966a25f1aa2b99fb5.setContent(html_32ea6438f95770ff7a21ac28d686d22a);
+            
+        
+
+        marker_1d31b22ed5a2e5a723b2cd6f6f2ec434.bindPopup(popup_677e30ff6c881f7966a25f1aa2b99fb5)
+        ;
+
+        
+    
+    
+                marker_1d31b22ed5a2e5a723b2cd6f6f2ec434.setIcon(icon_7a5c358f65a07e94d9f7d71b0165c634);
+            
+    
+            var marker_b0dca02767b0c98ba05e1dc8742eca20 = L.marker(
+                [51.0417658, -114.1396142],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_ba1ad4a132895e5f70e5164c4c883822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f944d83df634aefbeb0e7d25dbc82d1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f9999560052a9e0bbb4155e823d5e40 = $(`<div id="html_4f9999560052a9e0bbb4155e823d5e40" style="width: 100.0%; height: 100.0%;">DRIVER<br>Sw<br>Mode: driving</div>`)[0];
+                popup_f944d83df634aefbeb0e7d25dbc82d1b.setContent(html_4f9999560052a9e0bbb4155e823d5e40);
+            
+        
+
+        marker_b0dca02767b0c98ba05e1dc8742eca20.bindPopup(popup_f944d83df634aefbeb0e7d25dbc82d1b)
+        ;
+
+        
+    
+    
+                marker_b0dca02767b0c98ba05e1dc8742eca20.setIcon(icon_ba1ad4a132895e5f70e5164c4c883822);
+            
+    
+            var marker_a6dc988f14dd60bb43acf420e8c23db0 = L.marker(
+                [51.1510854, -114.1126719],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_cad2cc181ebc6878a8380b366f63f128 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_719b9ca72f822b6ec66199ef3f787029 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4f76d737c41322f94db55867def0c5e = $(`<div id="html_c4f76d737c41322f94db55867def0c5e" style="width: 100.0%; height: 100.0%;">DRIVER<br>hidden valley<br>Mode: driving</div>`)[0];
+                popup_719b9ca72f822b6ec66199ef3f787029.setContent(html_c4f76d737c41322f94db55867def0c5e);
+            
+        
+
+        marker_a6dc988f14dd60bb43acf420e8c23db0.bindPopup(popup_719b9ca72f822b6ec66199ef3f787029)
+        ;
+
+        
+    
+    
+                marker_a6dc988f14dd60bb43acf420e8c23db0.setIcon(icon_cad2cc181ebc6878a8380b366f63f128);
+            
+    
+            var marker_8f1fdac6f7ae88fe5ebecbd5902d39ce = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_fa9037bf6c225e2ef898fb90a9963f9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2b8e248aa8cc652cf015e0a99928b10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_052c8321db05b157705d89a64b5e9bf2 = $(`<div id="html_052c8321db05b157705d89a64b5e9bf2" style="width: 100.0%; height: 100.0%;">DRIVER<br>nw<br>Mode: driving</div>`)[0];
+                popup_c2b8e248aa8cc652cf015e0a99928b10.setContent(html_052c8321db05b157705d89a64b5e9bf2);
+            
+        
+
+        marker_8f1fdac6f7ae88fe5ebecbd5902d39ce.bindPopup(popup_c2b8e248aa8cc652cf015e0a99928b10)
+        ;
+
+        
+    
+    
+                marker_8f1fdac6f7ae88fe5ebecbd5902d39ce.setIcon(icon_fa9037bf6c225e2ef898fb90a9963f9c);
+            
+    
+            var marker_e4c68c2bf110abe88b481296cfb7de04 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_1d2d6859bb6625cb0b7c790ead206a3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d95ba8b0ee54348afc27134329542c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f591a4c39e0d5898fdc96718481c31e5 = $(`<div id="html_f591a4c39e0d5898fdc96718481c31e5" style="width: 100.0%; height: 100.0%;">DRIVER<br>NE Calgary<br>Mode: driving</div>`)[0];
+                popup_7d95ba8b0ee54348afc27134329542c6.setContent(html_f591a4c39e0d5898fdc96718481c31e5);
+            
+        
+
+        marker_e4c68c2bf110abe88b481296cfb7de04.bindPopup(popup_7d95ba8b0ee54348afc27134329542c6)
+        ;
+
+        
+    
+    
+                marker_e4c68c2bf110abe88b481296cfb7de04.setIcon(icon_1d2d6859bb6625cb0b7c790ead206a3b);
+            
+    
+            var marker_195947ec1b974bc4520ec556a1daec9b = L.marker(
+                [51.1786962, -114.0776987],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6af7b5a6dec6376b5cb5320325737f1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fca3e0600278fcd253bf7df04ed2e6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_823c9f5050f8a53ab41f9537952f60e1 = $(`<div id="html_823c9f5050f8a53ab41f9537952f60e1" style="width: 100.0%; height: 100.0%;">DRIVER<br>Carrington NW<br>Mode: driving</div>`)[0];
+                popup_1fca3e0600278fcd253bf7df04ed2e6f.setContent(html_823c9f5050f8a53ab41f9537952f60e1);
+            
+        
+
+        marker_195947ec1b974bc4520ec556a1daec9b.bindPopup(popup_1fca3e0600278fcd253bf7df04ed2e6f)
+        ;
+
+        
+    
+    
+                marker_195947ec1b974bc4520ec556a1daec9b.setIcon(icon_6af7b5a6dec6376b5cb5320325737f1a);
+            
+    
+            var marker_9e1422593c8e3f187f5f2a64b6eeb940 = L.marker(
+                [50.9085388, -114.0851646],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_eab562326a4912ec1fa8dbbadc754350 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d016c1228aff31a748b50d3efe00e420 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ef0af39295dc4cbf9b51f7085867d39 = $(`<div id="html_7ef0af39295dc4cbf9b51f7085867d39" style="width: 100.0%; height: 100.0%;">DRIVER<br>Shawnessy<br>Mode: driving</div>`)[0];
+                popup_d016c1228aff31a748b50d3efe00e420.setContent(html_7ef0af39295dc4cbf9b51f7085867d39);
+            
+        
+
+        marker_9e1422593c8e3f187f5f2a64b6eeb940.bindPopup(popup_d016c1228aff31a748b50d3efe00e420)
+        ;
+
+        
+    
+    
+                marker_9e1422593c8e3f187f5f2a64b6eeb940.setIcon(icon_eab562326a4912ec1fa8dbbadc754350);
+            
+    
+            var marker_f53ea556a1f624230264989e0c14bf3d = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_babb42409b5653e4a1bc3cb50432e14c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5115155bc5d3ca8f29b3bb140b3576f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac4d06e5f38d48ca8e7d7235f2ed9599 = $(`<div id="html_ac4d06e5f38d48ca8e7d7235f2ed9599" style="width: 100.0%; height: 100.0%;">DRIVER<br>NE<br>Mode: driving and transit</div>`)[0];
+                popup_5115155bc5d3ca8f29b3bb140b3576f1.setContent(html_ac4d06e5f38d48ca8e7d7235f2ed9599);
+            
+        
+
+        marker_f53ea556a1f624230264989e0c14bf3d.bindPopup(popup_5115155bc5d3ca8f29b3bb140b3576f1)
+        ;
+
+        
+    
+    
+                marker_f53ea556a1f624230264989e0c14bf3d.setIcon(icon_babb42409b5653e4a1bc3cb50432e14c);
+            
+    
+            var marker_c95efbf8dff3dec4bac12234b11a914f = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_335ebc82f9590756ee5a54c130723e83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cd15f7759ee131edafdc09c20f45723 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28baee9616d7fe7afa67cd4fe65a929b = $(`<div id="html_28baee9616d7fe7afa67cd4fe65a929b" style="width: 100.0%; height: 100.0%;">DRIVER<br>NE<br>Mode: driving</div>`)[0];
+                popup_1cd15f7759ee131edafdc09c20f45723.setContent(html_28baee9616d7fe7afa67cd4fe65a929b);
+            
+        
+
+        marker_c95efbf8dff3dec4bac12234b11a914f.bindPopup(popup_1cd15f7759ee131edafdc09c20f45723)
+        ;
+
+        
+    
+    
+                marker_c95efbf8dff3dec4bac12234b11a914f.setIcon(icon_335ebc82f9590756ee5a54c130723e83);
+            
+    
+            var marker_e2432b1c21ae58e7ecc12799f857f43e = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_be4f36deb63a6e092bf417ceff921b25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e31c62d6091b61e4e6d7ee04d3dec0f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fe0726820023dc4cb79abcc1b4c4f51 = $(`<div id="html_7fe0726820023dc4cb79abcc1b4c4f51" style="width: 100.0%; height: 100.0%;">DRIVER<br>NE Calgary<br>Mode: driving</div>`)[0];
+                popup_e31c62d6091b61e4e6d7ee04d3dec0f9.setContent(html_7fe0726820023dc4cb79abcc1b4c4f51);
+            
+        
+
+        marker_e2432b1c21ae58e7ecc12799f857f43e.bindPopup(popup_e31c62d6091b61e4e6d7ee04d3dec0f9)
+        ;
+
+        
+    
+    
+                marker_e2432b1c21ae58e7ecc12799f857f43e.setIcon(icon_be4f36deb63a6e092bf417ceff921b25);
+            
+    
+            var marker_0a6589ff68b7a8b56f9045d9ffe7508c = L.marker(
+                [51.0909975, -114.1557593],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_3e8b18f980a9f6a76e27d67068e37a8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63f67eb0c0077ef5b512a95a8d44183e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73f0da1e1d1a0d8bf5ad6cb9daf79707 = $(`<div id="html_73f0da1e1d1a0d8bf5ad6cb9daf79707" style="width: 100.0%; height: 100.0%;">DRIVER<br>Varsity<br>Mode: driving</div>`)[0];
+                popup_63f67eb0c0077ef5b512a95a8d44183e.setContent(html_73f0da1e1d1a0d8bf5ad6cb9daf79707);
+            
+        
+
+        marker_0a6589ff68b7a8b56f9045d9ffe7508c.bindPopup(popup_63f67eb0c0077ef5b512a95a8d44183e)
+        ;
+
+        
+    
+    
+                marker_0a6589ff68b7a8b56f9045d9ffe7508c.setIcon(icon_3e8b18f980a9f6a76e27d67068e37a8d);
+            
+    
+            var marker_0329591bcba5792f9d501d5400044445 = L.marker(
+                [51.0417305, -114.0610488],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_86429b7afeec3f581e5aa1c8e420a2c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc342e290b163bc828f1bc54c887abb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae8f6e2bb7830522f55114e3dbd2c8b8 = $(`<div id="html_ae8f6e2bb7830522f55114e3dbd2c8b8" style="width: 100.0%; height: 100.0%;">DRIVER<br>SE Calgary<br>Mode: driving</div>`)[0];
+                popup_2bc342e290b163bc828f1bc54c887abb.setContent(html_ae8f6e2bb7830522f55114e3dbd2c8b8);
+            
+        
+
+        marker_0329591bcba5792f9d501d5400044445.bindPopup(popup_2bc342e290b163bc828f1bc54c887abb)
+        ;
+
+        
+    
+    
+                marker_0329591bcba5792f9d501d5400044445.setIcon(icon_86429b7afeec3f581e5aa1c8e420a2c0);
+            
+    
+            var marker_62354fa285c31d12358c736e1b7cd7b8 = L.marker(
+                [51.1313416, -114.177447],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_d5162aec56b4ce3060f52dd2107486e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c803fdc1244f58e5d6f01e2a329da340 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e8243e8808ecf7e67f81b9a733778e2 = $(`<div id="html_4e8243e8808ecf7e67f81b9a733778e2" style="width: 100.0%; height: 100.0%;">DRIVER<br>Hawkwood<br>Mode: driving</div>`)[0];
+                popup_c803fdc1244f58e5d6f01e2a329da340.setContent(html_4e8243e8808ecf7e67f81b9a733778e2);
+            
+        
+
+        marker_62354fa285c31d12358c736e1b7cd7b8.bindPopup(popup_c803fdc1244f58e5d6f01e2a329da340)
+        ;
+
+        
+    
+    
+                marker_62354fa285c31d12358c736e1b7cd7b8.setIcon(icon_d5162aec56b4ce3060f52dd2107486e6);
+            
+    
+            var marker_882834056ef0d80512aceb7eed8fa6ca = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_3104ba486463a3b8decd363d89a0ccd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_488417237e8d8ee8a3908abc2fc4c48a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2906d200ba85e08d7975e09279a1363 = $(`<div id="html_c2906d200ba85e08d7975e09279a1363" style="width: 100.0%; height: 100.0%;">DRIVER<br>NE Calgary<br>Mode: driving</div>`)[0];
+                popup_488417237e8d8ee8a3908abc2fc4c48a.setContent(html_c2906d200ba85e08d7975e09279a1363);
+            
+        
+
+        marker_882834056ef0d80512aceb7eed8fa6ca.bindPopup(popup_488417237e8d8ee8a3908abc2fc4c48a)
+        ;
+
+        
+    
+    
+                marker_882834056ef0d80512aceb7eed8fa6ca.setIcon(icon_3104ba486463a3b8decd363d89a0ccd3);
+            
+    
+            var marker_475f79c7fcd7fce352c3b54051d81a45 = L.marker(
+                [50.8748779, -113.9489154],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6bf04500d42bb8621af820fdc23b91a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f0957fdc2e04dd25bb9c237cf9b5fd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_241a88d7c515347754ff6789a17d6987 = $(`<div id="html_241a88d7c515347754ff6789a17d6987" style="width: 100.0%; height: 100.0%;">DRIVER<br>Seton<br>Mode: driving</div>`)[0];
+                popup_1f0957fdc2e04dd25bb9c237cf9b5fd7.setContent(html_241a88d7c515347754ff6789a17d6987);
+            
+        
+
+        marker_475f79c7fcd7fce352c3b54051d81a45.bindPopup(popup_1f0957fdc2e04dd25bb9c237cf9b5fd7)
+        ;
+
+        
+    
+    
+                marker_475f79c7fcd7fce352c3b54051d81a45.setIcon(icon_6bf04500d42bb8621af820fdc23b91a2);
+            
+    
+            var marker_ee1d3a1034b06570990c33a1099cfa52 = L.marker(
+                [51.166383, -114.1418532],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_8443c179e7080dc377753a0ee2accc79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d09ffed8af5623d9bb8eba0dd7dc9da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4477c18338af45e65b57fa3431d600f6 = $(`<div id="html_4477c18338af45e65b57fa3431d600f6" style="width: 100.0%; height: 100.0%;">DRIVER<br>Kincora, NW Calgary<br>Mode: driving and transit</div>`)[0];
+                popup_5d09ffed8af5623d9bb8eba0dd7dc9da.setContent(html_4477c18338af45e65b57fa3431d600f6);
+            
+        
+
+        marker_ee1d3a1034b06570990c33a1099cfa52.bindPopup(popup_5d09ffed8af5623d9bb8eba0dd7dc9da)
+        ;
+
+        
+    
+    
+                marker_ee1d3a1034b06570990c33a1099cfa52.setIcon(icon_8443c179e7080dc377753a0ee2accc79);
+            
+    
+            var marker_872f9c7a9801a04191293adc38e50d3e = L.marker(
+                [51.1584472, -114.1330259],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6d93f3ac5da51ba2dd3f1dd96da8ac3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61de00cedf493ff30fd4286d89d7d7da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9bca9775095aee6c6fccbadf4a66ade = $(`<div id="html_e9bca9775095aee6c6fccbadf4a66ade" style="width: 100.0%; height: 100.0%;">DRIVER<br>Kincora<br>Mode: driving</div>`)[0];
+                popup_61de00cedf493ff30fd4286d89d7d7da.setContent(html_e9bca9775095aee6c6fccbadf4a66ade);
+            
+        
+
+        marker_872f9c7a9801a04191293adc38e50d3e.bindPopup(popup_61de00cedf493ff30fd4286d89d7d7da)
+        ;
+
+        
+    
+    
+                marker_872f9c7a9801a04191293adc38e50d3e.setIcon(icon_6d93f3ac5da51ba2dd3f1dd96da8ac3e);
+            
+    
+            var marker_df28209494484932ea0f1d5d794e0681 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_0b4b4f9a7ac0575b4fa11e25136d8b51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fff47a82802ccfbbc9cd9d9710c0c483 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93da3af4511760330e8b465de4d3a9c4 = $(`<div id="html_93da3af4511760330e8b465de4d3a9c4" style="width: 100.0%; height: 100.0%;">DRIVER<br>NW Calgary<br>Mode: driving</div>`)[0];
+                popup_fff47a82802ccfbbc9cd9d9710c0c483.setContent(html_93da3af4511760330e8b465de4d3a9c4);
+            
+        
+
+        marker_df28209494484932ea0f1d5d794e0681.bindPopup(popup_fff47a82802ccfbbc9cd9d9710c0c483)
+        ;
+
+        
+    
+    
+                marker_df28209494484932ea0f1d5d794e0681.setIcon(icon_0b4b4f9a7ac0575b4fa11e25136d8b51);
+            
+    
+            var marker_046afdb418e0fbd9547f749fe08120b5 = L.marker(
+                [51.0546848, -114.085926],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_d3139f0762966f1a328d9092a97e60bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d44cbc46adc6fd2de3b0f70e2da6c7bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2190f56015ee3bfbd1a0b6d46a17aed5 = $(`<div id="html_2190f56015ee3bfbd1a0b6d46a17aed5" style="width: 100.0%; height: 100.0%;">DRIVER<br>Kensington<br>Mode: driving</div>`)[0];
+                popup_d44cbc46adc6fd2de3b0f70e2da6c7bd.setContent(html_2190f56015ee3bfbd1a0b6d46a17aed5);
+            
+        
+
+        marker_046afdb418e0fbd9547f749fe08120b5.bindPopup(popup_d44cbc46adc6fd2de3b0f70e2da6c7bd)
+        ;
+
+        
+    
+    
+                marker_046afdb418e0fbd9547f749fe08120b5.setIcon(icon_d3139f0762966f1a328d9092a97e60bf);
+            
+    
+            var marker_2e906780d2bafcfa8dcac566427cb85f = L.marker(
+                [50.9690109, -114.1279109],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_d4d20ae1f54475f19717ab43e488106c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b4df88d4765e75aaa171b7308079c6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fbc29aa4c56cdaa88c10ff8bcfe952a = $(`<div id="html_2fbc29aa4c56cdaa88c10ff8bcfe952a" style="width: 100.0%; height: 100.0%;">DRIVER<br>Oakridge<br>Mode: driving</div>`)[0];
+                popup_0b4df88d4765e75aaa171b7308079c6f.setContent(html_2fbc29aa4c56cdaa88c10ff8bcfe952a);
+            
+        
+
+        marker_2e906780d2bafcfa8dcac566427cb85f.bindPopup(popup_0b4df88d4765e75aaa171b7308079c6f)
+        ;
+
+        
+    
+    
+                marker_2e906780d2bafcfa8dcac566427cb85f.setIcon(icon_d4d20ae1f54475f19717ab43e488106c);
+            
+    
+            var marker_1a57c83129ceebfb0202e13ea283b909 = L.marker(
+                [50.9085388, -114.0851646],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_bf5587588364dd4539888826fb9f3106 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52bb7540bd58e4e34b3c1bcfb171c011 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f0ae5446bfc1fef39daa6ab1c98a79b = $(`<div id="html_8f0ae5446bfc1fef39daa6ab1c98a79b" style="width: 100.0%; height: 100.0%;">DRIVER<br>Shawnessy<br>Mode: driving</div>`)[0];
+                popup_52bb7540bd58e4e34b3c1bcfb171c011.setContent(html_8f0ae5446bfc1fef39daa6ab1c98a79b);
+            
+        
+
+        marker_1a57c83129ceebfb0202e13ea283b909.bindPopup(popup_52bb7540bd58e4e34b3c1bcfb171c011)
+        ;
+
+        
+    
+    
+                marker_1a57c83129ceebfb0202e13ea283b909.setIcon(icon_bf5587588364dd4539888826fb9f3106);
+            
+    
+            var marker_4369334c55e2ab0f033496e28ff334bf = L.marker(
+                [50.942554, -114.1288526],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_12e71dcc09ba3dedf7a3b3ccafeec386 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dde9b0663880393c86efd43e05ad5fff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dffb1cc630cb809866087e7e37c870cd = $(`<div id="html_dffb1cc630cb809866087e7e37c870cd" style="width: 100.0%; height: 100.0%;">DRIVER<br>Woodbine<br>Mode: driving</div>`)[0];
+                popup_dde9b0663880393c86efd43e05ad5fff.setContent(html_dffb1cc630cb809866087e7e37c870cd);
+            
+        
+
+        marker_4369334c55e2ab0f033496e28ff334bf.bindPopup(popup_dde9b0663880393c86efd43e05ad5fff)
+        ;
+
+        
+    
+    
+                marker_4369334c55e2ab0f033496e28ff334bf.setIcon(icon_12e71dcc09ba3dedf7a3b3ccafeec386);
+            
+    
+            var marker_7f27ce2fc8463179ef6f015e79cba008 = L.marker(
+                [51.0588216, -114.2042544],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_5dc250eaf7fc4b3cef703c49b618f524 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba38620da7628c2db24b8e1727038e57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_849ad48159e6bec7913c2a7405ba5c63 = $(`<div id="html_849ad48159e6bec7913c2a7405ba5c63" style="width: 100.0%; height: 100.0%;">DRIVER<br>West Springs<br>Mode: driving</div>`)[0];
+                popup_ba38620da7628c2db24b8e1727038e57.setContent(html_849ad48159e6bec7913c2a7405ba5c63);
+            
+        
+
+        marker_7f27ce2fc8463179ef6f015e79cba008.bindPopup(popup_ba38620da7628c2db24b8e1727038e57)
+        ;
+
+        
+    
+    
+                marker_7f27ce2fc8463179ef6f015e79cba008.setIcon(icon_5dc250eaf7fc4b3cef703c49b618f524);
+            
+    
+            var marker_6a4c6cf31db641e8bc056357c180cabd = L.marker(
+                [51.0417658, -114.1396142],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_b9f0cdd50396a73d352809efedfc80ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a27ed064c495d310d12ebde02ad336d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9bc698497e403fa443d022508d75e2c = $(`<div id="html_e9bc698497e403fa443d022508d75e2c" style="width: 100.0%; height: 100.0%;">DRIVER<br>SW<br>Mode: driving</div>`)[0];
+                popup_a27ed064c495d310d12ebde02ad336d3.setContent(html_e9bc698497e403fa443d022508d75e2c);
+            
+        
+
+        marker_6a4c6cf31db641e8bc056357c180cabd.bindPopup(popup_a27ed064c495d310d12ebde02ad336d3)
+        ;
+
+        
+    
+    
+                marker_6a4c6cf31db641e8bc056357c180cabd.setIcon(icon_b9f0cdd50396a73d352809efedfc80ac);
+            
+    
+            var marker_eed1d9b2633fa5587cf0b058b41ed1d8 = L.marker(
+                [51.1587035, -113.9422989],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_994444517ac4acd96ad3551f9811f0f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d3c14ed3e3c114f514627cd6decb571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfee56f87e231c983e27045a1c06e6fb = $(`<div id="html_bfee56f87e231c983e27045a1c06e6fb" style="width: 100.0%; height: 100.0%;">DRIVER<br>Cornerstone, NE<br>Mode: driving</div>`)[0];
+                popup_3d3c14ed3e3c114f514627cd6decb571.setContent(html_bfee56f87e231c983e27045a1c06e6fb);
+            
+        
+
+        marker_eed1d9b2633fa5587cf0b058b41ed1d8.bindPopup(popup_3d3c14ed3e3c114f514627cd6decb571)
+        ;
+
+        
+    
+    
+                marker_eed1d9b2633fa5587cf0b058b41ed1d8.setIcon(icon_994444517ac4acd96ad3551f9811f0f7);
+            
+    
+            var marker_e548d21951a84ecdcc23af41581e6496 = L.marker(
+                [51.1712925, -114.1163524],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_7ea3e5cb9932a9611fbd514cd730edb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a82f586451efc79b04708ef69c4f3dbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b181ecbf457df5847dd2eb61c31786bd = $(`<div id="html_b181ecbf457df5847dd2eb61c31786bd" style="width: 100.0%; height: 100.0%;">DRIVER<br>Evanston<br>Mode: driving</div>`)[0];
+                popup_a82f586451efc79b04708ef69c4f3dbe.setContent(html_b181ecbf457df5847dd2eb61c31786bd);
+            
+        
+
+        marker_e548d21951a84ecdcc23af41581e6496.bindPopup(popup_a82f586451efc79b04708ef69c4f3dbe)
+        ;
+
+        
+    
+    
+                marker_e548d21951a84ecdcc23af41581e6496.setIcon(icon_7ea3e5cb9932a9611fbd514cd730edb1);
+            
+    
+            var marker_ff06ceabefbee0a23e5d7605f179abe2 = L.marker(
+                [51.0842774, -114.1238276],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_e48f978eace3621d222a6a7084ae0295 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17c244752085537b6b43df3e792468e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2031ef8d44b748cb7f92feb5fe38352b = $(`<div id="html_2031ef8d44b748cb7f92feb5fe38352b" style="width: 100.0%; height: 100.0%;">DRIVER<br>Charleswood NW<br>Mode: driving</div>`)[0];
+                popup_17c244752085537b6b43df3e792468e7.setContent(html_2031ef8d44b748cb7f92feb5fe38352b);
+            
+        
+
+        marker_ff06ceabefbee0a23e5d7605f179abe2.bindPopup(popup_17c244752085537b6b43df3e792468e7)
+        ;
+
+        
+    
+    
+                marker_ff06ceabefbee0a23e5d7605f179abe2.setIcon(icon_e48f978eace3621d222a6a7084ae0295);
+            
+    
+            var marker_c994d4ebee1bc9dae517ba5aa03e0af6 = L.marker(
+                [51.013442, -114.1516969],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_4b047c645d74e9a823b242a7a1a882dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a36f21e896628ba323a5256359866e18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5a0f655027e7eb5db504735fc8a53a0 = $(`<div id="html_e5a0f655027e7eb5db504735fc8a53a0" style="width: 100.0%; height: 100.0%;">Transit User<br>Glamorgan<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_a36f21e896628ba323a5256359866e18.setContent(html_e5a0f655027e7eb5db504735fc8a53a0);
+            
+        
+
+        marker_c994d4ebee1bc9dae517ba5aa03e0af6.bindPopup(popup_a36f21e896628ba323a5256359866e18)
+        ;
+
+        
+    
+    
+                marker_c994d4ebee1bc9dae517ba5aa03e0af6.setIcon(icon_4b047c645d74e9a823b242a7a1a882dd);
+            
+    
+            var marker_9ce78b53e407f2c9b9fbc22adb0ad799 = L.marker(
+                [50.9063403, -114.0747722],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_ef48094ee1b90857a9c3e22e42805f06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0ece6ce031c712928000c682a6027a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_668d86e09c212b0579a0e36f89af04a4 = $(`<div id="html_668d86e09c212b0579a0e36f89af04a4" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Shawnessey<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_d0ece6ce031c712928000c682a6027a2.setContent(html_668d86e09c212b0579a0e36f89af04a4);
+            
+        
+
+        marker_9ce78b53e407f2c9b9fbc22adb0ad799.bindPopup(popup_d0ece6ce031c712928000c682a6027a2)
+        ;
+
+        
+    
+    
+                marker_9ce78b53e407f2c9b9fbc22adb0ad799.setIcon(icon_ef48094ee1b90857a9c3e22e42805f06);
+            
+    
+            var marker_2b1a4a6fb0146031ed4b05c2167723a7 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_89d67bbeb30b8a7d6e988f5b51cae4cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3198da92a80ead623fddcb758f5aa89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6154691067144c90c245854226b1c0e = $(`<div id="html_c6154691067144c90c245854226b1c0e" style="width: 100.0%; height: 100.0%;">Transit User<br>Tuscany<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_b3198da92a80ead623fddcb758f5aa89.setContent(html_c6154691067144c90c245854226b1c0e);
+            
+        
+
+        marker_2b1a4a6fb0146031ed4b05c2167723a7.bindPopup(popup_b3198da92a80ead623fddcb758f5aa89)
+        ;
+
+        
+    
+    
+                marker_2b1a4a6fb0146031ed4b05c2167723a7.setIcon(icon_89d67bbeb30b8a7d6e988f5b51cae4cc);
+            
+    
+            var marker_643116ac4c802e366ee578c3e95910d8 = L.marker(
+                [51.1200131, -114.1864052],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_5d7708900162ba120212054051a96c03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cefa2180e3e4de9c51b23494c9ab70c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b35c13309d63c6267c6ba8ad4e2ff43 = $(`<div id="html_1b35c13309d63c6267c6ba8ad4e2ff43" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Ranchlands<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_2cefa2180e3e4de9c51b23494c9ab70c.setContent(html_1b35c13309d63c6267c6ba8ad4e2ff43);
+            
+        
+
+        marker_643116ac4c802e366ee578c3e95910d8.bindPopup(popup_2cefa2180e3e4de9c51b23494c9ab70c)
+        ;
+
+        
+    
+    
+                marker_643116ac4c802e366ee578c3e95910d8.setIcon(icon_5d7708900162ba120212054051a96c03);
+            
+    
+            var marker_c6cf0b2f13e578748b9cd81e899aa65d = L.marker(
+                [51.033333, -113.966667],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_c8a527794e75e12e7ffdf3c65cf9c442 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_546bb0632e211032e0e844c52287dcf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f68ab1cb625a9275efbdbf756b1131a = $(`<div id="html_2f68ab1cb625a9275efbdbf756b1131a" style="width: 100.0%; height: 100.0%;">Transit User<br>forest lawn<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_546bb0632e211032e0e844c52287dcf7.setContent(html_2f68ab1cb625a9275efbdbf756b1131a);
+            
+        
+
+        marker_c6cf0b2f13e578748b9cd81e899aa65d.bindPopup(popup_546bb0632e211032e0e844c52287dcf7)
+        ;
+
+        
+    
+    
+                marker_c6cf0b2f13e578748b9cd81e899aa65d.setIcon(icon_c8a527794e75e12e7ffdf3c65cf9c442);
+            
+    
+            var marker_ea80091eb0482b95e569cadd05f5590e = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_b5ce831a32f261020a15e866a68c7317 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_886838ac178e7d34a84d75ce0c59753e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69dafd9d6f98476498bcc6f3947c38a4 = $(`<div id="html_69dafd9d6f98476498bcc6f3947c38a4" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_886838ac178e7d34a84d75ce0c59753e.setContent(html_69dafd9d6f98476498bcc6f3947c38a4);
+            
+        
+
+        marker_ea80091eb0482b95e569cadd05f5590e.bindPopup(popup_886838ac178e7d34a84d75ce0c59753e)
+        ;
+
+        
+    
+    
+                marker_ea80091eb0482b95e569cadd05f5590e.setIcon(icon_b5ce831a32f261020a15e866a68c7317);
+            
+    
+            var marker_41f9a39dbe696047932df7575dfa31a5 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_290488d1aef1ea936d0c5bc5329b8916 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adbff9cd6da1973980a6e2b331b8770e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_538b4282690d7b67586ee6e9a5107838 = $(`<div id="html_538b4282690d7b67586ee6e9a5107838" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_adbff9cd6da1973980a6e2b331b8770e.setContent(html_538b4282690d7b67586ee6e9a5107838);
+            
+        
+
+        marker_41f9a39dbe696047932df7575dfa31a5.bindPopup(popup_adbff9cd6da1973980a6e2b331b8770e)
+        ;
+
+        
+    
+    
+                marker_41f9a39dbe696047932df7575dfa31a5.setIcon(icon_290488d1aef1ea936d0c5bc5329b8916);
+            
+    
+            var marker_54cb9a814eb675e50064353a826cf9fc = L.marker(
+                [51.1187237, -114.068287],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_710b0c614602932e19ffcc1b48514b8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de6bb4e6e74a83ed57751a8e681ca870 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea9dd2373ffd802c14706b0019a5d42b = $(`<div id="html_ea9dd2373ffd802c14706b0019a5d42b" style="width: 100.0%; height: 100.0%;">Transit User<br>NW Huntington Hills<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_de6bb4e6e74a83ed57751a8e681ca870.setContent(html_ea9dd2373ffd802c14706b0019a5d42b);
+            
+        
+
+        marker_54cb9a814eb675e50064353a826cf9fc.bindPopup(popup_de6bb4e6e74a83ed57751a8e681ca870)
+        ;
+
+        
+    
+    
+                marker_54cb9a814eb675e50064353a826cf9fc.setIcon(icon_710b0c614602932e19ffcc1b48514b8e);
+            
+    
+            var marker_d1ea2e38edc474ef0e80d001c4180a7c = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_ad13689cf1b16065db8f1966ca74b57e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8dbe69d262eb26f29cf2260dbe70fe2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a39a905a0864db108f39c539591712ff = $(`<div id="html_a39a905a0864db108f39c539591712ff" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_c8dbe69d262eb26f29cf2260dbe70fe2.setContent(html_a39a905a0864db108f39c539591712ff);
+            
+        
+
+        marker_d1ea2e38edc474ef0e80d001c4180a7c.bindPopup(popup_c8dbe69d262eb26f29cf2260dbe70fe2)
+        ;
+
+        
+    
+    
+                marker_d1ea2e38edc474ef0e80d001c4180a7c.setIcon(icon_ad13689cf1b16065db8f1966ca74b57e);
+            
+    
+            var marker_05d48d1f8ba608d433b2398bc1dac0f8 = L.marker(
+                [51.0647776, -113.95884],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_12d508ee1869529ee2ab56d15b1c63a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e767c53276090989554cee7364aa2e7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_344b2f8aae936c84a40e8f7b599715f0 = $(`<div id="html_344b2f8aae936c84a40e8f7b599715f0" style="width: 100.0%; height: 100.0%;">Transit User<br>Marlborough Area<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_e767c53276090989554cee7364aa2e7f.setContent(html_344b2f8aae936c84a40e8f7b599715f0);
+            
+        
+
+        marker_05d48d1f8ba608d433b2398bc1dac0f8.bindPopup(popup_e767c53276090989554cee7364aa2e7f)
+        ;
+
+        
+    
+    
+                marker_05d48d1f8ba608d433b2398bc1dac0f8.setIcon(icon_12d508ee1869529ee2ab56d15b1c63a2);
+            
+    
+            var marker_29acc0bf4a45b7800597cd1211159def = L.marker(
+                [50.9424353, -114.1093591],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_f9dbd3942148005c635eeac1a128a412 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2757e4d34441e6feedaf04638be341ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2856ce73c355a3ae48df6bd691c9211c = $(`<div id="html_2856ce73c355a3ae48df6bd691c9211c" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Woodlands<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_2757e4d34441e6feedaf04638be341ce.setContent(html_2856ce73c355a3ae48df6bd691c9211c);
+            
+        
+
+        marker_29acc0bf4a45b7800597cd1211159def.bindPopup(popup_2757e4d34441e6feedaf04638be341ce)
+        ;
+
+        
+    
+    
+                marker_29acc0bf4a45b7800597cd1211159def.setIcon(icon_f9dbd3942148005c635eeac1a128a412);
+            
+    
+            var marker_ad59ec9e555b152ea67a2290e3d3539a = L.marker(
+                [51.0538013, -114.0443096],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6790557eb99c36231e7b875240f67b12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e84bd08cbf7fe94c2c188c72e3989e95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e44c4d24ca2f9839fdd9221a759847df = $(`<div id="html_e44c4d24ca2f9839fdd9221a759847df" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Bridgeland<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_e84bd08cbf7fe94c2c188c72e3989e95.setContent(html_e44c4d24ca2f9839fdd9221a759847df);
+            
+        
+
+        marker_ad59ec9e555b152ea67a2290e3d3539a.bindPopup(popup_e84bd08cbf7fe94c2c188c72e3989e95)
+        ;
+
+        
+    
+    
+                marker_ad59ec9e555b152ea67a2290e3d3539a.setIcon(icon_6790557eb99c36231e7b875240f67b12);
+            
+    
+            var marker_e6d863ed905b649bb6ce32e9e620d12b = L.marker(
+                [51.0417305, -114.0610488],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_9f69be7e65acd5434abe17ab01fe1816 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e02260ca46a80c1a3943ec030c162a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d60eafdfcb7d8a8d860b24abac16cef = $(`<div id="html_1d60eafdfcb7d8a8d860b24abac16cef" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>SE Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_1e02260ca46a80c1a3943ec030c162a1.setContent(html_1d60eafdfcb7d8a8d860b24abac16cef);
+            
+        
+
+        marker_e6d863ed905b649bb6ce32e9e620d12b.bindPopup(popup_1e02260ca46a80c1a3943ec030c162a1)
+        ;
+
+        
+    
+    
+                marker_e6d863ed905b649bb6ce32e9e620d12b.setIcon(icon_9f69be7e65acd5434abe17ab01fe1816);
+            
+    
+            var marker_5fe44f0a7e2dc35a1509bf774eba6f37 = L.marker(
+                [51.1595638, -114.148693],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_f308193dff2e77116a5c910222b261d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d09ea83819011d3668cc71cc6d44ab1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02070c5c74b2a8719d84514fd0973f0c = $(`<div id="html_02070c5c74b2a8719d84514fd0973f0c" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>sherwood<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_2d09ea83819011d3668cc71cc6d44ab1.setContent(html_02070c5c74b2a8719d84514fd0973f0c);
+            
+        
+
+        marker_5fe44f0a7e2dc35a1509bf774eba6f37.bindPopup(popup_2d09ea83819011d3668cc71cc6d44ab1)
+        ;
+
+        
+    
+    
+                marker_5fe44f0a7e2dc35a1509bf774eba6f37.setIcon(icon_f308193dff2e77116a5c910222b261d7);
+            
+    
+            var marker_3a2534ca005bb97f546fa42b01849254 = L.marker(
+                [51.023324, -114.1488999],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_51e6b60189e1568a58d978ee52b69eaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0df5f919d76fa8bdd8bc12abf38da24a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e233a7e1ef7f346d54dffa26245d1285 = $(`<div id="html_e233a7e1ef7f346d54dffa26245d1285" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Glenbrook<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_0df5f919d76fa8bdd8bc12abf38da24a.setContent(html_e233a7e1ef7f346d54dffa26245d1285);
+            
+        
+
+        marker_3a2534ca005bb97f546fa42b01849254.bindPopup(popup_0df5f919d76fa8bdd8bc12abf38da24a)
+        ;
+
+        
+    
+    
+                marker_3a2534ca005bb97f546fa42b01849254.setIcon(icon_51e6b60189e1568a58d978ee52b69eaa);
+            
+    
+            var marker_97219aae0b9df9f3301d4fe3885a1fb6 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_72c2a8534c9be738d5e28238af987029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e6c82cd616cb9246025617f6883d619 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4776da4673cc4d043baa1a10892f6ac6 = $(`<div id="html_4776da4673cc4d043baa1a10892f6ac6" style="width: 100.0%; height: 100.0%;">Transit User<br>Tuscany<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_8e6c82cd616cb9246025617f6883d619.setContent(html_4776da4673cc4d043baa1a10892f6ac6);
+            
+        
+
+        marker_97219aae0b9df9f3301d4fe3885a1fb6.bindPopup(popup_8e6c82cd616cb9246025617f6883d619)
+        ;
+
+        
+    
+    
+                marker_97219aae0b9df9f3301d4fe3885a1fb6.setIcon(icon_72c2a8534c9be738d5e28238af987029);
+            
+    
+            var marker_bda1e15a69ab1816f16e2871d8ab5667 = L.marker(
+                [50.9852177, -114.1081198],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_e6ef99b0f8f77ee69a249f7880e3d3d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f43eed1b335795d4ddd3f8270630d14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28e779b753f0de00b25c11ad100c2c0f = $(`<div id="html_28e779b753f0de00b25c11ad100c2c0f" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>southwest<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_8f43eed1b335795d4ddd3f8270630d14.setContent(html_28e779b753f0de00b25c11ad100c2c0f);
+            
+        
+
+        marker_bda1e15a69ab1816f16e2871d8ab5667.bindPopup(popup_8f43eed1b335795d4ddd3f8270630d14)
+        ;
+
+        
+    
+    
+                marker_bda1e15a69ab1816f16e2871d8ab5667.setIcon(icon_e6ef99b0f8f77ee69a249f7880e3d3d2);
+            
+    
+            var marker_c229e97cc164789ae5eea21535312f7f = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_edf38e3d1fd66455c4e4caf1f2bfbf10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86bf00901b834c995661c754fe7ab4b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17ba024e9e521002b5fb8c12750e2d24 = $(`<div id="html_17ba024e9e521002b5fb8c12750e2d24" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>SW Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_86bf00901b834c995661c754fe7ab4b0.setContent(html_17ba024e9e521002b5fb8c12750e2d24);
+            
+        
+
+        marker_c229e97cc164789ae5eea21535312f7f.bindPopup(popup_86bf00901b834c995661c754fe7ab4b0)
+        ;
+
+        
+    
+    
+                marker_c229e97cc164789ae5eea21535312f7f.setIcon(icon_edf38e3d1fd66455c4e4caf1f2bfbf10);
+            
+    
+            var marker_1edb8d452bfc8f89ffe3b4457f752b1f = L.marker(
+                [51.1735731, -114.1207416],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_0a0232a43a4be73a22816be41b5acb63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fff5e22ad26308e454db50bc21aa48cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbd84f2e9bac32459047338e2c73d72e = $(`<div id="html_cbd84f2e9bac32459047338e2c73d72e" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Evanston, NW calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_fff5e22ad26308e454db50bc21aa48cf.setContent(html_cbd84f2e9bac32459047338e2c73d72e);
+            
+        
+
+        marker_1edb8d452bfc8f89ffe3b4457f752b1f.bindPopup(popup_fff5e22ad26308e454db50bc21aa48cf)
+        ;
+
+        
+    
+    
+                marker_1edb8d452bfc8f89ffe3b4457f752b1f.setIcon(icon_0a0232a43a4be73a22816be41b5acb63);
+            
+    
+            var marker_40406b16d978638498a78d2f9943b517 = L.marker(
+                [51.1771597, -114.1632737],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_ccb69e6ff3c1595980264b59a38f23ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa2f7f76b2c891bc40dd030bd2fc5470 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97bd1ee6470e4d5e161accd8749dccfe = $(`<div id="html_97bd1ee6470e4d5e161accd8749dccfe" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>nolan hill<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_aa2f7f76b2c891bc40dd030bd2fc5470.setContent(html_97bd1ee6470e4d5e161accd8749dccfe);
+            
+        
+
+        marker_40406b16d978638498a78d2f9943b517.bindPopup(popup_aa2f7f76b2c891bc40dd030bd2fc5470)
+        ;
+
+        
+    
+    
+                marker_40406b16d978638498a78d2f9943b517.setIcon(icon_ccb69e6ff3c1595980264b59a38f23ac);
+            
+    
+            var marker_3206f2f06e11c89117cc60d356dde623 = L.marker(
+                [51.0293578, -114.0865186],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_c61f89482a52f572500ac5fd3f5fa9e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8498ca4ebbc4542640d9244b3a83517c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36826fb44dd0fad56d093becae473702 = $(`<div id="html_36826fb44dd0fad56d093becae473702" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Upper Mount Royal<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_8498ca4ebbc4542640d9244b3a83517c.setContent(html_36826fb44dd0fad56d093becae473702);
+            
+        
+
+        marker_3206f2f06e11c89117cc60d356dde623.bindPopup(popup_8498ca4ebbc4542640d9244b3a83517c)
+        ;
+
+        
+    
+    
+                marker_3206f2f06e11c89117cc60d356dde623.setIcon(icon_c61f89482a52f572500ac5fd3f5fa9e5);
+            
+    
+            var marker_dfeed3e8d7b3a6e2299e89b6f32ba297 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_0bc5cff27b26f6ddeac7af5804086eb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b634effcbc15b46c4dd425efa611eae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6d9ad6aba1aa56c39e0354b058641f5 = $(`<div id="html_a6d9ad6aba1aa56c39e0354b058641f5" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NW Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_b634effcbc15b46c4dd425efa611eae9.setContent(html_a6d9ad6aba1aa56c39e0354b058641f5);
+            
+        
+
+        marker_dfeed3e8d7b3a6e2299e89b6f32ba297.bindPopup(popup_b634effcbc15b46c4dd425efa611eae9)
+        ;
+
+        
+    
+    
+                marker_dfeed3e8d7b3a6e2299e89b6f32ba297.setIcon(icon_0bc5cff27b26f6ddeac7af5804086eb5);
+            
+    
+            var marker_4531c853e15c4d75a21ac94d66a3e79e = L.marker(
+                [51.044845, -113.9901949],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_3788599c817b52fb5d5c59d71ea79f8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28b6ba06e78041e5a626384cc4c02601 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef3aba7a5859c812256d2e06ac23d4f6 = $(`<div id="html_ef3aba7a5859c812256d2e06ac23d4f6" style="width: 100.0%; height: 100.0%;">Transit User<br>Radisson Heights<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_28b6ba06e78041e5a626384cc4c02601.setContent(html_ef3aba7a5859c812256d2e06ac23d4f6);
+            
+        
+
+        marker_4531c853e15c4d75a21ac94d66a3e79e.bindPopup(popup_28b6ba06e78041e5a626384cc4c02601)
+        ;
+
+        
+    
+    
+                marker_4531c853e15c4d75a21ac94d66a3e79e.setIcon(icon_3788599c817b52fb5d5c59d71ea79f8b);
+            
+    
+            var marker_1689f8b6d37219c4627cccb96129390a = L.marker(
+                [50.9591032, -114.1246491],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6e4133f3d6af43f5109d52f36e04ec0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d4c2198be8ff4c7008a80bc59542890 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2a52b444003f342bd8cc33a504b9e72 = $(`<div id="html_f2a52b444003f342bd8cc33a504b9e72" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Cedarbrae SW<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_1d4c2198be8ff4c7008a80bc59542890.setContent(html_f2a52b444003f342bd8cc33a504b9e72);
+            
+        
+
+        marker_1689f8b6d37219c4627cccb96129390a.bindPopup(popup_1d4c2198be8ff4c7008a80bc59542890)
+        ;
+
+        
+    
+    
+                marker_1689f8b6d37219c4627cccb96129390a.setIcon(icon_6e4133f3d6af43f5109d52f36e04ec0e);
+            
+    
+            var marker_58bd5d781f73ebf711869cf990e510e9 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_8d5890c7f3b7e5788177d3b9b4e05d75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_837540e9b734dac17509372ace503dba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecefc05290d348c1c3f10ccfa85bb628 = $(`<div id="html_ecefc05290d348c1c3f10ccfa85bb628" style="width: 100.0%; height: 100.0%;">Transit User<br>Tuscany<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_837540e9b734dac17509372ace503dba.setContent(html_ecefc05290d348c1c3f10ccfa85bb628);
+            
+        
+
+        marker_58bd5d781f73ebf711869cf990e510e9.bindPopup(popup_837540e9b734dac17509372ace503dba)
+        ;
+
+        
+    
+    
+                marker_58bd5d781f73ebf711869cf990e510e9.setIcon(icon_8d5890c7f3b7e5788177d3b9b4e05d75);
+            
+    
+            var marker_43f51cd1e9d09e0c08d52f8e6431e491 = L.marker(
+                [51.0063354, -114.0777846],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_8d5e1132716f7386e5513a83f6220673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08785e3628ba95fff3bc0d8c9788ae87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bded32b919c7d32ef4c2605b3b9bb4fc = $(`<div id="html_bded32b919c7d32ef4c2605b3b9bb4fc" style="width: 100.0%; height: 100.0%;">Transit User<br>Windsor Park, SW<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_08785e3628ba95fff3bc0d8c9788ae87.setContent(html_bded32b919c7d32ef4c2605b3b9bb4fc);
+            
+        
+
+        marker_43f51cd1e9d09e0c08d52f8e6431e491.bindPopup(popup_08785e3628ba95fff3bc0d8c9788ae87)
+        ;
+
+        
+    
+    
+                marker_43f51cd1e9d09e0c08d52f8e6431e491.setIcon(icon_8d5e1132716f7386e5513a83f6220673);
+            
+    
+            var marker_70fdb20ff230a814febcae07ee21f19d = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_a66377412ec3fccceb9023d8e7460a47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b40d02cbf3296353ec2a267539526cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dd718327fdd30d1228ff6ef1bc7a981 = $(`<div id="html_0dd718327fdd30d1228ff6ef1bc7a981" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE<br>Mode: driving and transit</div>`)[0];
+                popup_2b40d02cbf3296353ec2a267539526cc.setContent(html_0dd718327fdd30d1228ff6ef1bc7a981);
+            
+        
+
+        marker_70fdb20ff230a814febcae07ee21f19d.bindPopup(popup_2b40d02cbf3296353ec2a267539526cc)
+        ;
+
+        
+    
+    
+                marker_70fdb20ff230a814febcae07ee21f19d.setIcon(icon_a66377412ec3fccceb9023d8e7460a47);
+            
+    
+            var marker_078e38ebb0f66d72fb272f277f9f906a = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_daac958581c903c877eb332baaf1ce52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ff7be34ce08440189b8f19f897248c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_404b4fcca4967dc6ab0c07e56eb674c4 = $(`<div id="html_404b4fcca4967dc6ab0c07e56eb674c4" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_8ff7be34ce08440189b8f19f897248c0.setContent(html_404b4fcca4967dc6ab0c07e56eb674c4);
+            
+        
+
+        marker_078e38ebb0f66d72fb272f277f9f906a.bindPopup(popup_8ff7be34ce08440189b8f19f897248c0)
+        ;
+
+        
+    
+    
+                marker_078e38ebb0f66d72fb272f277f9f906a.setIcon(icon_daac958581c903c877eb332baaf1ce52);
+            
+    
+            var marker_49e8910b00e5fa3704f6a461d63ec4b9 = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_e385ab8f999adee8103da692b5f5c7ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f931d229a853d8fddfe8285fec71323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e6238ed3a1b88f5b15d88cadcada18e = $(`<div id="html_5e6238ed3a1b88f5b15d88cadcada18e" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>SW Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_0f931d229a853d8fddfe8285fec71323.setContent(html_5e6238ed3a1b88f5b15d88cadcada18e);
+            
+        
+
+        marker_49e8910b00e5fa3704f6a461d63ec4b9.bindPopup(popup_0f931d229a853d8fddfe8285fec71323)
+        ;
+
+        
+    
+    
+                marker_49e8910b00e5fa3704f6a461d63ec4b9.setIcon(icon_e385ab8f999adee8103da692b5f5c7ea);
+            
+    
+            var marker_7c24c2a068cf038303be56f3c026c623 = L.marker(
+                [51.0640427, -114.1472491],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_0735e5dcea45f3419ea065dbe301af1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f4957d8593920d2738a43b88a139b32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec718f187b9c06581b3c4cf86eda3e8f = $(`<div id="html_ec718f187b9c06581b3c4cf86eda3e8f" style="width: 100.0%; height: 100.0%;">Transit User<br>NW Calgary, bowness<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_3f4957d8593920d2738a43b88a139b32.setContent(html_ec718f187b9c06581b3c4cf86eda3e8f);
+            
+        
+
+        marker_7c24c2a068cf038303be56f3c026c623.bindPopup(popup_3f4957d8593920d2738a43b88a139b32)
+        ;
+
+        
+    
+    
+                marker_7c24c2a068cf038303be56f3c026c623.setIcon(icon_0735e5dcea45f3419ea065dbe301af1d);
+            
+    
+            var marker_c59b7a3faad79da96073b19c696a787a = L.marker(
+                [51.0204457, -114.1891083],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_721839332dd6d1809cfd4afa1d825b1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c158a800296f5f424fc8cd287e0d0e84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffe2566f5147b080180c2b5af752f7c9 = $(`<div id="html_ffe2566f5147b080180c2b5af752f7c9" style="width: 100.0%; height: 100.0%;">Transit User<br>Springbank Hill (SW)<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_c158a800296f5f424fc8cd287e0d0e84.setContent(html_ffe2566f5147b080180c2b5af752f7c9);
+            
+        
+
+        marker_c59b7a3faad79da96073b19c696a787a.bindPopup(popup_c158a800296f5f424fc8cd287e0d0e84)
+        ;
+
+        
+    
+    
+                marker_c59b7a3faad79da96073b19c696a787a.setIcon(icon_721839332dd6d1809cfd4afa1d825b1c);
+            
+    
+            var marker_b31eaafb7e1fc2819d75ee9b7a5dcfef = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_b881ec9ad70b49733d64532c183c3138 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca6cda09b43517bee6287044bbe89ba0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26830f419cdfc111403a17ad00787fb0 = $(`<div id="html_26830f419cdfc111403a17ad00787fb0" style="width: 100.0%; height: 100.0%;">Transit User<br>Tuscany<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_ca6cda09b43517bee6287044bbe89ba0.setContent(html_26830f419cdfc111403a17ad00787fb0);
+            
+        
+
+        marker_b31eaafb7e1fc2819d75ee9b7a5dcfef.bindPopup(popup_ca6cda09b43517bee6287044bbe89ba0)
+        ;
+
+        
+    
+    
+                marker_b31eaafb7e1fc2819d75ee9b7a5dcfef.setIcon(icon_b881ec9ad70b49733d64532c183c3138);
+            
+    
+            var marker_09c3032aefd75880d364a01d4b59d352 = L.marker(
+                [51.084919, -114.1323225],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_c32ddea4b66f7764befebe38e8e7a602 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f38fd75ca5f35abfc5c15b74beb699a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_900c7ba5573b456c3411976a46d1af33 = $(`<div id="html_900c7ba5573b456c3411976a46d1af33" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Varsity/Brentwood<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_5f38fd75ca5f35abfc5c15b74beb699a.setContent(html_900c7ba5573b456c3411976a46d1af33);
+            
+        
+
+        marker_09c3032aefd75880d364a01d4b59d352.bindPopup(popup_5f38fd75ca5f35abfc5c15b74beb699a)
+        ;
+
+        
+    
+    
+                marker_09c3032aefd75880d364a01d4b59d352.setIcon(icon_c32ddea4b66f7764befebe38e8e7a602);
+            
+    
+            var marker_df9b25e28e95b037a7c1a0c836ef18e2 = L.marker(
+                [51.166383, -114.1418532],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_3b31bfc75988c0ee9aa0ab12d9afa728 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b487de5083aec8bc4a04834b09fc7b21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cb268e7eb8ca0ad71ac4c05e095e57b = $(`<div id="html_3cb268e7eb8ca0ad71ac4c05e095e57b" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Kincora, NW Calgary<br>Mode: driving and transit</div>`)[0];
+                popup_b487de5083aec8bc4a04834b09fc7b21.setContent(html_3cb268e7eb8ca0ad71ac4c05e095e57b);
+            
+        
+
+        marker_df9b25e28e95b037a7c1a0c836ef18e2.bindPopup(popup_b487de5083aec8bc4a04834b09fc7b21)
+        ;
+
+        
+    
+    
+                marker_df9b25e28e95b037a7c1a0c836ef18e2.setIcon(icon_3b31bfc75988c0ee9aa0ab12d9afa728);
+            
+    
+            var marker_36beb835a42eae50ab272ca6d6d401f1 = L.marker(
+                [51.0598811, -113.9489467],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_1d89e68162767a68d57ac914df2d2073 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a29e2f76dc7b6a0dfde9632c56d751b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6307dc19c5708bbeae0fb8f307dae6d6 = $(`<div id="html_6307dc19c5708bbeae0fb8f307dae6d6" style="width: 100.0%; height: 100.0%;">Transit User<br>Marlborough Park<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_2a29e2f76dc7b6a0dfde9632c56d751b.setContent(html_6307dc19c5708bbeae0fb8f307dae6d6);
+            
+        
+
+        marker_36beb835a42eae50ab272ca6d6d401f1.bindPopup(popup_2a29e2f76dc7b6a0dfde9632c56d751b)
+        ;
+
+        
+    
+    
+                marker_36beb835a42eae50ab272ca6d6d401f1.setIcon(icon_1d89e68162767a68d57ac914df2d2073);
+            
+    
+            var marker_40b7f430f754addc4f21bbedf08e0b19 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_bd6efd600e2689e490dd35f80da3f148 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca168b9952dff14a5f563911d736b46b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d5e160f7881ff34bbd14366fcdefad8 = $(`<div id="html_8d5e160f7881ff34bbd14366fcdefad8" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NW Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_ca168b9952dff14a5f563911d736b46b.setContent(html_8d5e160f7881ff34bbd14366fcdefad8);
+            
+        
+
+        marker_40b7f430f754addc4f21bbedf08e0b19.bindPopup(popup_ca168b9952dff14a5f563911d736b46b)
+        ;
+
+        
+    
+    
+                marker_40b7f430f754addc4f21bbedf08e0b19.setIcon(icon_bd6efd600e2689e490dd35f80da3f148);
+            
+    
+            var marker_11c3b17751d7a0aacb614f2442d9c0b3 = L.marker(
+                [51.1613607, -114.124535],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_0caee0d5aaab45bd81b55338139e1bff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71c07f4cc3c53b4465a89106147c00bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b564bc1c06e1ba393225c1016d3a2d51 = $(`<div id="html_b564bc1c06e1ba393225c1016d3a2d51" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Evanston Nw Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_71c07f4cc3c53b4465a89106147c00bf.setContent(html_b564bc1c06e1ba393225c1016d3a2d51);
+            
+        
+
+        marker_11c3b17751d7a0aacb614f2442d9c0b3.bindPopup(popup_71c07f4cc3c53b4465a89106147c00bf)
+        ;
+
+        
+    
+    
+                marker_11c3b17751d7a0aacb614f2442d9c0b3.setIcon(icon_0caee0d5aaab45bd81b55338139e1bff);
+            
+    
+            var marker_d902669d8499fcac36049338ff6ddee9 = L.marker(
+                [51.0464963, -114.0506433],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_173573aaae6f555ae5e29dc61ad7379a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e05c3c8c045e736a333a05695247612c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d3508d734e28ee6cfa4408926c7994c = $(`<div id="html_9d3508d734e28ee6cfa4408926c7994c" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Downtown<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_e05c3c8c045e736a333a05695247612c.setContent(html_9d3508d734e28ee6cfa4408926c7994c);
+            
+        
+
+        marker_d902669d8499fcac36049338ff6ddee9.bindPopup(popup_e05c3c8c045e736a333a05695247612c)
+        ;
+
+        
+    
+    
+                marker_d902669d8499fcac36049338ff6ddee9.setIcon(icon_173573aaae6f555ae5e29dc61ad7379a);
+            
+    
+            var marker_88b1252d1fe1d45d43314b26276f30f4 = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_7425bfd7e8ffcef089af6b82e28adba8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5eae36fafe997e55250e290fd6228ba5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6936b5db7c8a4c9def3532c8621897cb = $(`<div id="html_6936b5db7c8a4c9def3532c8621897cb" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_5eae36fafe997e55250e290fd6228ba5.setContent(html_6936b5db7c8a4c9def3532c8621897cb);
+            
+        
+
+        marker_88b1252d1fe1d45d43314b26276f30f4.bindPopup(popup_5eae36fafe997e55250e290fd6228ba5)
+        ;
+
+        
+    
+    
+                marker_88b1252d1fe1d45d43314b26276f30f4.setIcon(icon_7425bfd7e8ffcef089af6b82e28adba8);
+            
+    
+            var marker_7206a743bc0f6077f9850df15185ee6a = L.marker(
+                [50.9007131, -114.1105152],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_9c7158fd40b153ada369506f0845f9fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_967e1a4a8436a59268ab186e28fa4e5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d64d3a4c3a8c31569d4af3b94e23d7e = $(`<div id="html_3d64d3a4c3a8c31569d4af3b94e23d7e" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Bridlewood<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_967e1a4a8436a59268ab186e28fa4e5b.setContent(html_3d64d3a4c3a8c31569d4af3b94e23d7e);
+            
+        
+
+        marker_7206a743bc0f6077f9850df15185ee6a.bindPopup(popup_967e1a4a8436a59268ab186e28fa4e5b)
+        ;
+
+        
+    
+    
+                marker_7206a743bc0f6077f9850df15185ee6a.setIcon(icon_9c7158fd40b153ada369506f0845f9fa);
+            
+    
+            var marker_f7e494559c7f094d6ff23b063a9f2778 = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6bd1acf1f5eb360982ac60b8b35ae0c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4f09cbc8bf370cc968760c2eb5d679d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f798d5a0a494fe9c3258de079ca2379 = $(`<div id="html_5f798d5a0a494fe9c3258de079ca2379" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>SW Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_a4f09cbc8bf370cc968760c2eb5d679d.setContent(html_5f798d5a0a494fe9c3258de079ca2379);
+            
+        
+
+        marker_f7e494559c7f094d6ff23b063a9f2778.bindPopup(popup_a4f09cbc8bf370cc968760c2eb5d679d)
+        ;
+
+        
+    
+    
+                marker_f7e494559c7f094d6ff23b063a9f2778.setIcon(icon_6bd1acf1f5eb360982ac60b8b35ae0c0);
+            
+    
+            var marker_81da387c4f5ca7dab34597260128bbe3 = L.marker(
+                [50.8906047, -113.9595647],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_6394fea3dcc8136d7e00cf6dafdf6e3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf0255d1cc38cb004c6d4e7e902856cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e37017d7cc666394b82e6e6604d8428 = $(`<div id="html_8e37017d7cc666394b82e6e6604d8428" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Auburn bay<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_cf0255d1cc38cb004c6d4e7e902856cf.setContent(html_8e37017d7cc666394b82e6e6604d8428);
+            
+        
+
+        marker_81da387c4f5ca7dab34597260128bbe3.bindPopup(popup_cf0255d1cc38cb004c6d4e7e902856cf)
+        ;
+
+        
+    
+    
+                marker_81da387c4f5ca7dab34597260128bbe3.setIcon(icon_6394fea3dcc8136d7e00cf6dafdf6e3f);
+            
+    
+            var marker_a4da25b0e6bdf1ef843d338c8995d286 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_15ff9af45610efe0e01841fe6dcbdae3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1819ff5bcb7677f119161d106fab51b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7de6d068fd738377cec640913bc1b03f = $(`<div id="html_7de6d068fd738377cec640913bc1b03f" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_1819ff5bcb7677f119161d106fab51b9.setContent(html_7de6d068fd738377cec640913bc1b03f);
+            
+        
+
+        marker_a4da25b0e6bdf1ef843d338c8995d286.bindPopup(popup_1819ff5bcb7677f119161d106fab51b9)
+        ;
+
+        
+    
+    
+                marker_a4da25b0e6bdf1ef843d338c8995d286.setIcon(icon_15ff9af45610efe0e01841fe6dcbdae3);
+            
+    
+            var marker_e0335da8fc40bcb7f7f95ebfd313d381 = L.marker(
+                [51.0380285, -114.0754742],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_81670434e2d595ca4d2f6b46d21560f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0582032ee77e3696939227e50989d3ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8acdabff096ca6af98e87604931e2001 = $(`<div id="html_8acdabff096ca6af98e87604931e2001" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>17th Ave SW<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_0582032ee77e3696939227e50989d3ee.setContent(html_8acdabff096ca6af98e87604931e2001);
+            
+        
+
+        marker_e0335da8fc40bcb7f7f95ebfd313d381.bindPopup(popup_0582032ee77e3696939227e50989d3ee)
+        ;
+
+        
+    
+    
+                marker_e0335da8fc40bcb7f7f95ebfd313d381.setIcon(icon_81670434e2d595ca4d2f6b46d21560f7);
+            
+    
+            var marker_c389c2479bcde8b0709657b884e7f9eb = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_29625914a6b33da33d6cbb055fcb5d41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43063a47914b18d0bd366f1146bd1ffb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e548ae3f2ae8b540a1a8a83d9440d72e = $(`<div id="html_e548ae3f2ae8b540a1a8a83d9440d72e" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NW Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_43063a47914b18d0bd366f1146bd1ffb.setContent(html_e548ae3f2ae8b540a1a8a83d9440d72e);
+            
+        
+
+        marker_c389c2479bcde8b0709657b884e7f9eb.bindPopup(popup_43063a47914b18d0bd366f1146bd1ffb)
+        ;
+
+        
+    
+    
+                marker_c389c2479bcde8b0709657b884e7f9eb.setIcon(icon_29625914a6b33da33d6cbb055fcb5d41);
+            
+    
+            var marker_3faf27536069273c03f6932d0a39f110 = L.marker(
+                [51.0588216, -114.2042544],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_0406c83f74b666a65b7ef7ce5040fe38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0e530fcbec4064defa93af66cb953d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42e47db4b27bea71b40a71715ddaaeec = $(`<div id="html_42e47db4b27bea71b40a71715ddaaeec" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>West Springs<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_e0e530fcbec4064defa93af66cb953d0.setContent(html_42e47db4b27bea71b40a71715ddaaeec);
+            
+        
+
+        marker_3faf27536069273c03f6932d0a39f110.bindPopup(popup_e0e530fcbec4064defa93af66cb953d0)
+        ;
+
+        
+    
+    
+                marker_3faf27536069273c03f6932d0a39f110.setIcon(icon_0406c83f74b666a65b7ef7ce5040fe38);
+            
+    
+            var marker_1597293c4126b8a88c7fa8e6181b0a3a = L.marker(
+                [51.1178849, -114.2195667],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_e4321554f78bb15e9be2431c113dca3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_372b6a2bc750fa159fae30e4287531fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb6876729d5a7acaed90bea95708a17e = $(`<div id="html_eb6876729d5a7acaed90bea95708a17e" style="width: 100.0%; height: 100.0%;">Transit User<br>Home<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_372b6a2bc750fa159fae30e4287531fd.setContent(html_eb6876729d5a7acaed90bea95708a17e);
+            
+        
+
+        marker_1597293c4126b8a88c7fa8e6181b0a3a.bindPopup(popup_372b6a2bc750fa159fae30e4287531fd)
+        ;
+
+        
+    
+    
+                marker_1597293c4126b8a88c7fa8e6181b0a3a.setIcon(icon_e4321554f78bb15e9be2431c113dca3b);
+            
+    
+            var marker_aaaa5251f481836af2bba76eb765d76e = L.marker(
+                [51.1584472, -114.1330259],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_73f9e3cfeb1c1e618ef09adbac1f4549 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb172e8fc774f5631dd776e8123df056 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc85b7b62454f9b81769b349ff4e4662 = $(`<div id="html_cc85b7b62454f9b81769b349ff4e4662" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Kincora<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_fb172e8fc774f5631dd776e8123df056.setContent(html_cc85b7b62454f9b81769b349ff4e4662);
+            
+        
+
+        marker_aaaa5251f481836af2bba76eb765d76e.bindPopup(popup_fb172e8fc774f5631dd776e8123df056)
+        ;
+
+        
+    
+    
+                marker_aaaa5251f481836af2bba76eb765d76e.setIcon(icon_73f9e3cfeb1c1e618ef09adbac1f4549);
+            
+    
+            var marker_6e9f3a501960e05f6d9ca80611b3c0d6 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_8f930e8fe04ac06f0a55b257894eea68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21764eb271b3fa5e0a18d63b38660691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9cd24ec654800ecc397c25a037182f3 = $(`<div id="html_e9cd24ec654800ecc397c25a037182f3" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>NE Calgary<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_21764eb271b3fa5e0a18d63b38660691.setContent(html_e9cd24ec654800ecc397c25a037182f3);
+            
+        
+
+        marker_6e9f3a501960e05f6d9ca80611b3c0d6.bindPopup(popup_21764eb271b3fa5e0a18d63b38660691)
+        ;
+
+        
+    
+    
+                marker_6e9f3a501960e05f6d9ca80611b3c0d6.setIcon(icon_8f930e8fe04ac06f0a55b257894eea68);
+            
+    
+            var marker_6447d1b6b32ebf9070219dc8a2b10165 = L.marker(
+                [50.9207264, -113.9470847],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_a03fe31e6c7c7bcef3761bd2a43f7b20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_455f8993bbdf50f8114a7ec791723f4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9153bb5f90cb2e6baabbdf41c05b0434 = $(`<div id="html_9153bb5f90cb2e6baabbdf41c05b0434" style="width: 100.0%; height: 100.0%;">Transit User<br>New Brighton<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_455f8993bbdf50f8114a7ec791723f4d.setContent(html_9153bb5f90cb2e6baabbdf41c05b0434);
+            
+        
+
+        marker_6447d1b6b32ebf9070219dc8a2b10165.bindPopup(popup_455f8993bbdf50f8114a7ec791723f4d)
+        ;
+
+        
+    
+    
+                marker_6447d1b6b32ebf9070219dc8a2b10165.setIcon(icon_a03fe31e6c7c7bcef3761bd2a43f7b20);
+            
+    
+            var marker_a21da5195e8d30b1cee199fcd75ac503 = L.marker(
+                [51.0399531, -114.1365332],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_24f8cc62a60a3c43c80e15fbba1a738e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_818e988373071a5675a0bb06babecd33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59cd60e9f906ec9251a549f3fbdf755c = $(`<div id="html_59cd60e9f906ec9251a549f3fbdf755c" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Westbrook<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_818e988373071a5675a0bb06babecd33.setContent(html_59cd60e9f906ec9251a549f3fbdf755c);
+            
+        
+
+        marker_a21da5195e8d30b1cee199fcd75ac503.bindPopup(popup_818e988373071a5675a0bb06babecd33)
+        ;
+
+        
+    
+    
+                marker_a21da5195e8d30b1cee199fcd75ac503.setIcon(icon_24f8cc62a60a3c43c80e15fbba1a738e);
+            
+    
+            var marker_b8d01aaf757ca63c4f24a985198dc815 = L.marker(
+                [51.0930748, -114.1260514],
+                {
+}
+            ).addTo(marker_cluster_d5bccda037e44e930a889b8876882649);
+        
+    
+            var icon_1ec233cacf181e34d36e76bf5d309181 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c0bd0100f92977cdb49ed405902ad4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d65e87420f1e758b96089a8aed1f12f = $(`<div id="html_5d65e87420f1e758b96089a8aed1f12f" style="width: 100.0%; height: 100.0%;">Transit User (Matched)<br>Brentwood<br>Mode: public transit (bus/train)</div>`)[0];
+                popup_2c0bd0100f92977cdb49ed405902ad4e.setContent(html_5d65e87420f1e758b96089a8aed1f12f);
+            
+        
+
+        marker_b8d01aaf757ca63c4f24a985198dc815.bindPopup(popup_2c0bd0100f92977cdb49ed405902ad4e)
+        ;
+
+        
+    
+    
+                marker_b8d01aaf757ca63c4f24a985198dc815.setIcon(icon_1ec233cacf181e34d36e76bf5d309181);
+            
+    
+            marker_cluster_d5bccda037e44e930a889b8876882649.addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_75f483bcf4c5f61f6e0a02fab4b46a07 = L.polyline(
+                [[51.0631292, -114.0878809], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_fd6a64ffe2c9f1417e4d9e187d84206d = L.polyline(
+                [[50.9301743, -114.016583], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_8f12527840f51367545aa4e5b0762bc9 = L.polyline(
+                [[51.1129005, -114.1448609], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_89343528ad9ddc34047796632a7428e4 = L.polyline(
+                [[50.988422, -114.0092464], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_4fe980f71d55a935c2773ca7cab54b6d = L.polyline(
+                [[50.8565939, -114.0002516], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_300228c381e846441fc0c68330c25376 = L.polyline(
+                [[50.9176132, -114.1147339], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_5fe612222c4169b1b3c0a8026fee7758 = L.polyline(
+                [[51.0930748, -114.1260514], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_10d5e172e3f282675621dd376ee1e59d = L.polyline(
+                [[51.145091, -114.1757304], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_3c7a48a66f2bf95572ef989734c3260a = L.polyline(
+                [[51.0417658, -114.1396142], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_480667f8aea79878fa8b5e9066eefade = L.polyline(
+                [[51.1510854, -114.1126719], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_f0961599c57a7673b1fdd415581378c4 = L.polyline(
+                [[51.0631292, -114.0878809], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_0f326e8aa017a79cda05f0b437b4527c = L.polyline(
+                [[51.0819768, -114.009815], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_8c5e193f231add22365958db329a26e0 = L.polyline(
+                [[51.1786962, -114.0776987], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_1bc0dddb4bd241c49d1fd696d43fa903 = L.polyline(
+                [[50.9085388, -114.0851646], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_9be01cf3a008ac883be4c8eca76dd480 = L.polyline(
+                [[51.0456064, -114.057541], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_c3b898028578088b13c7b414f2a5c1b1 = L.polyline(
+                [[51.0456064, -114.057541], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_477e96da0407db84c226fdc7b4040dbf = L.polyline(
+                [[51.0819768, -114.009815], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_a3c9bd50e80d0f4e55dd8ddbd16046b0 = L.polyline(
+                [[51.0909975, -114.1557593], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_9b84801243f16a17b7ccce3e31c68bc3 = L.polyline(
+                [[51.0417305, -114.0610488], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_9e030a51145a31ffdfa3ae8669cd0219 = L.polyline(
+                [[51.1313416, -114.177447], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_fd099438040c9527884c6c82cdc17606 = L.polyline(
+                [[51.0819768, -114.009815], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_83190c93fb4fc0e72fe8ead43fd3e102 = L.polyline(
+                [[50.8748779, -113.9489154], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_72eaede93b0c3902fa292a4b4d4c6c5e = L.polyline(
+                [[51.166383, -114.1418532], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_30b6d3d39513f5ccaee164d58bb34015 = L.polyline(
+                [[51.1584472, -114.1330259], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_ddc39d351ad3f300e1500c55596e5443 = L.polyline(
+                [[51.0631292, -114.0878809], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_666d79ba06340933455b2dd7fa49845b = L.polyline(
+                [[51.0546848, -114.085926], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_1221b40fe1f83a94230a7b2391a6a661 = L.polyline(
+                [[50.9690109, -114.1279109], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_72ca201deec32810b0c50186b9eb6cf3 = L.polyline(
+                [[50.9085388, -114.0851646], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_0b8bee0313cd1c70bbf42ce38a32c51c = L.polyline(
+                [[50.942554, -114.1288526], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_9ed13ba573629c0c284d5374c9e60580 = L.polyline(
+                [[51.0588216, -114.2042544], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_a07a37f463b16ee1bf534ca69ddccec6 = L.polyline(
+                [[51.0417658, -114.1396142], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_339f51ac376b7541759307d84386e087 = L.polyline(
+                [[51.1587035, -113.9422989], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_dca5fecb3e8e86eb310fdb99b4775526 = L.polyline(
+                [[51.1712925, -114.1163524], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+    
+            var poly_line_0a6f727b396e5bc6cbfd3dec18b2d900 = L.polyline(
+                [[51.0842774, -114.1238276], [51.0782, -114.1336]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_859171e2f48a6ad788357ddc2589df13);
+        
+</script>
+</html>

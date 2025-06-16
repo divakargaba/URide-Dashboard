@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_827968f7623b7716cf046f30f7cfb152 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_827968f7623b7716cf046f30f7cfb152" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_827968f7623b7716cf046f30f7cfb152 = L.map(
+                "map_827968f7623b7716cf046f30f7cfb152",
+                {
+                    center: [51.0447, -114.0719],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3ccffa33bf7f704c6dd8f566f9160e4d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3ccffa33bf7f704c6dd8f566f9160e4d.addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var heat_map_fed94666f95b25e4abe1300b378cbcb5 = L.heatLayer(
+                [[51.0819768, -114.009815, 8.0], [51.0631292, -114.0878809, 5.0], [51.1253802, -114.2448425, 4.0], [51.0394935, -114.1685393, 3.0], [51.0456064, -114.057541, 3.0], [51.1584472, -114.1330259, 2.0], [50.9085388, -114.0851646, 2.0], [51.0417305, -114.0610488, 2.0], [51.0588216, -114.2042544, 2.0], [51.0819768, -114.009815, 2.0], [51.0930748, -114.1260514, 2.0], [50.8748779, -113.9489154, 1.0], [51.084919, -114.1323225, 1.0], [51.166383, -114.1418532, 1.0], [51.0598811, -113.9489467, 1.0], [51.0631292, -114.0878809, 1.0], [51.0204457, -114.1891083, 1.0], [51.0640427, -114.1472491, 1.0], [51.1313416, -114.177447, 1.0], [51.0909975, -114.1557593, 1.0], [51.0063354, -114.0777846, 1.0], [51.1613607, -114.124535, 1.0], [51.0546848, -114.085926, 1.0], [51.0380285, -114.0754742, 1.0], [51.0399531, -114.1365332, 1.0], [50.9207264, -113.9470847, 1.0], [51.1178849, -114.2195667, 1.0], [51.1712925, -114.1163524, 1.0], [51.1587035, -113.9422989, 1.0], [51.0417658, -114.1396142, 1.0], [50.9591032, -114.1246491, 1.0], [50.8906047, -113.9595647, 1.0], [50.942554, -114.1288526, 1.0], [50.9007131, -114.1105152, 1.0], [50.9690109, -114.1279109, 1.0], [51.0464963, -114.0506433, 1.0], [51.1786962, -114.0776987, 1.0], [51.0631292, -114.0878809, 1.0], [50.8565939, -114.0002516, 1.0], [51.0647776, -113.95884, 1.0], [50.8987423, -114.0833678, 1.0], [50.988422, -114.0092464, 1.0], [51.1187237, -114.068287, 1.0], [51.1129005, -114.1448609, 1.0], [51.033333, -113.966667, 1.0], [50.9301743, -114.016583, 1.0], [51.1200131, -114.1864052, 1.0], [50.9063403, -114.0747722, 1.0], [50.9424353, -114.1093591, 1.0], [51.044845, -113.9901949, 1.0], [51.1481976, -114.0537778, 1.0], [51.1510854, -114.1126719, 1.0], [51.013442, -114.1516969, 1.0], [51.0293578, -114.0865186, 1.0], [51.0417658, -114.1396142, 1.0], [51.1771597, -114.1632737, 1.0], [51.1735731, -114.1207416, 1.0], [50.9852177, -114.1081198, 1.0], [51.145091, -114.1757304, 1.0], [51.023324, -114.1488999, 1.0], [51.1595638, -114.148693, 1.0], [50.9176132, -114.1147339, 1.0], [51.0538013, -114.0443096, 1.0], [51.0842774, -114.1238276, 1.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 18,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_fed94666f95b25e4abe1300b378cbcb5.addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var marker_0a93ef28a484e3a320a80738cf808cb6 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_5cf8bbef1064e0f16c74627c963789a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_582aef625caf07990875c2d7bf3b4407 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62e8c5fc6fac0c16933fa82ace0398fe = $(`<div id="html_62e8c5fc6fac0c16933fa82ace0398fe" style="width: 100.0%; height: 100.0%;">NE Calgary: 8 students</div>`)[0];
+                popup_582aef625caf07990875c2d7bf3b4407.setContent(html_62e8c5fc6fac0c16933fa82ace0398fe);
+            
+        
+
+        marker_0a93ef28a484e3a320a80738cf808cb6.bindPopup(popup_582aef625caf07990875c2d7bf3b4407)
+        ;
+
+        
+    
+    
+                marker_0a93ef28a484e3a320a80738cf808cb6.setIcon(icon_5cf8bbef1064e0f16c74627c963789a1);
+            
+    
+            var marker_e6e5dd370fc8ba15eea7da85f986ae77 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_cfdcbdccdfdd7ba624de9fd6c6e1dfeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3184e98fc987a9fb1196d0d87723d1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14f3c5a33061ddb5c7ac0bdf54326c6b = $(`<div id="html_14f3c5a33061ddb5c7ac0bdf54326c6b" style="width: 100.0%; height: 100.0%;">NW Calgary: 5 students</div>`)[0];
+                popup_e3184e98fc987a9fb1196d0d87723d1b.setContent(html_14f3c5a33061ddb5c7ac0bdf54326c6b);
+            
+        
+
+        marker_e6e5dd370fc8ba15eea7da85f986ae77.bindPopup(popup_e3184e98fc987a9fb1196d0d87723d1b)
+        ;
+
+        
+    
+    
+                marker_e6e5dd370fc8ba15eea7da85f986ae77.setIcon(icon_cfdcbdccdfdd7ba624de9fd6c6e1dfeb);
+            
+    
+            var marker_a7863be8c1476d1a2a2a42b969b85da0 = L.marker(
+                [51.1253802, -114.2448425],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_3a3607bef106b5031b27834cf376c89c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_202533dbe5830fa6e54d6a180bfda4fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b5113544b5a0d2011fe1d1b52013d68 = $(`<div id="html_8b5113544b5a0d2011fe1d1b52013d68" style="width: 100.0%; height: 100.0%;">Tuscany: 4 students</div>`)[0];
+                popup_202533dbe5830fa6e54d6a180bfda4fb.setContent(html_8b5113544b5a0d2011fe1d1b52013d68);
+            
+        
+
+        marker_a7863be8c1476d1a2a2a42b969b85da0.bindPopup(popup_202533dbe5830fa6e54d6a180bfda4fb)
+        ;
+
+        
+    
+    
+                marker_a7863be8c1476d1a2a2a42b969b85da0.setIcon(icon_3a3607bef106b5031b27834cf376c89c);
+            
+    
+            var marker_1f0fd1e4dbd4ae1616630c0379d8d6ad = L.marker(
+                [51.0394935, -114.1685393],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_4bec262ece756c28153f59db1d6e7fd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c3543b5b3716cc8dc734d5d4027c915 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bf608e509e6c8bb518c7d1b9c6c9163 = $(`<div id="html_8bf608e509e6c8bb518c7d1b9c6c9163" style="width: 100.0%; height: 100.0%;">SW Calgary: 3 students</div>`)[0];
+                popup_7c3543b5b3716cc8dc734d5d4027c915.setContent(html_8bf608e509e6c8bb518c7d1b9c6c9163);
+            
+        
+
+        marker_1f0fd1e4dbd4ae1616630c0379d8d6ad.bindPopup(popup_7c3543b5b3716cc8dc734d5d4027c915)
+        ;
+
+        
+    
+    
+                marker_1f0fd1e4dbd4ae1616630c0379d8d6ad.setIcon(icon_4bec262ece756c28153f59db1d6e7fd4);
+            
+    
+            var marker_6f5f52543e07b308daba4ad57c05e64d = L.marker(
+                [51.0456064, -114.057541],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_61b83b4376b0a2777f9bff77f20c35b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_679111f03319c0f2f55e7565102c801e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47f92598be55fc3164b2873e1b31b904 = $(`<div id="html_47f92598be55fc3164b2873e1b31b904" style="width: 100.0%; height: 100.0%;">NE: 3 students</div>`)[0];
+                popup_679111f03319c0f2f55e7565102c801e.setContent(html_47f92598be55fc3164b2873e1b31b904);
+            
+        
+
+        marker_6f5f52543e07b308daba4ad57c05e64d.bindPopup(popup_679111f03319c0f2f55e7565102c801e)
+        ;
+
+        
+    
+    
+                marker_6f5f52543e07b308daba4ad57c05e64d.setIcon(icon_61b83b4376b0a2777f9bff77f20c35b9);
+            
+    
+            var marker_079e79970d6ab4af101e6b9c33664500 = L.marker(
+                [51.1584472, -114.1330259],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_7f3692a40c665386b4323df9132d4c0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb443c61c9bde1dd53ddfefe9d4261c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_475987d271d7217872b66accae8d2d69 = $(`<div id="html_475987d271d7217872b66accae8d2d69" style="width: 100.0%; height: 100.0%;">Kincora: 2 students</div>`)[0];
+                popup_bb443c61c9bde1dd53ddfefe9d4261c2.setContent(html_475987d271d7217872b66accae8d2d69);
+            
+        
+
+        marker_079e79970d6ab4af101e6b9c33664500.bindPopup(popup_bb443c61c9bde1dd53ddfefe9d4261c2)
+        ;
+
+        
+    
+    
+                marker_079e79970d6ab4af101e6b9c33664500.setIcon(icon_7f3692a40c665386b4323df9132d4c0b);
+            
+    
+            var marker_95976c9d4876867e46b46ae9dfd7df61 = L.marker(
+                [50.9085388, -114.0851646],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_9b0ce35080424a2a9ec7cf2da924c6d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84ba9bf79b978f03c6d9bacfdf7f8dd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_929235468901897aad0431e1bbba88a3 = $(`<div id="html_929235468901897aad0431e1bbba88a3" style="width: 100.0%; height: 100.0%;">Shawnessy: 2 students</div>`)[0];
+                popup_84ba9bf79b978f03c6d9bacfdf7f8dd5.setContent(html_929235468901897aad0431e1bbba88a3);
+            
+        
+
+        marker_95976c9d4876867e46b46ae9dfd7df61.bindPopup(popup_84ba9bf79b978f03c6d9bacfdf7f8dd5)
+        ;
+
+        
+    
+    
+                marker_95976c9d4876867e46b46ae9dfd7df61.setIcon(icon_9b0ce35080424a2a9ec7cf2da924c6d8);
+            
+    
+            var marker_0a87f198b8a301f41a6663d8f415b4b3 = L.marker(
+                [51.0417305, -114.0610488],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_77ca7b85082d31a12e5239123d287347 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1a4a5c707295c5d60e6c880c13f1e32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aebfcec0ee11935b835b91b780b67ba5 = $(`<div id="html_aebfcec0ee11935b835b91b780b67ba5" style="width: 100.0%; height: 100.0%;">SE Calgary: 2 students</div>`)[0];
+                popup_a1a4a5c707295c5d60e6c880c13f1e32.setContent(html_aebfcec0ee11935b835b91b780b67ba5);
+            
+        
+
+        marker_0a87f198b8a301f41a6663d8f415b4b3.bindPopup(popup_a1a4a5c707295c5d60e6c880c13f1e32)
+        ;
+
+        
+    
+    
+                marker_0a87f198b8a301f41a6663d8f415b4b3.setIcon(icon_77ca7b85082d31a12e5239123d287347);
+            
+    
+            var marker_7cf1bda7df8cdd8eabe1f82931e23882 = L.marker(
+                [51.0588216, -114.2042544],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_f5b7d2ae36968eb6d8146706dfd71a8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68773a53b0b60f4900f8848c91334339 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eeb5663db28238cd65297be16a4a0e4a = $(`<div id="html_eeb5663db28238cd65297be16a4a0e4a" style="width: 100.0%; height: 100.0%;">West Springs: 2 students</div>`)[0];
+                popup_68773a53b0b60f4900f8848c91334339.setContent(html_eeb5663db28238cd65297be16a4a0e4a);
+            
+        
+
+        marker_7cf1bda7df8cdd8eabe1f82931e23882.bindPopup(popup_68773a53b0b60f4900f8848c91334339)
+        ;
+
+        
+    
+    
+                marker_7cf1bda7df8cdd8eabe1f82931e23882.setIcon(icon_f5b7d2ae36968eb6d8146706dfd71a8f);
+            
+    
+            var marker_c3fe70862e625de24309be20734c9ea4 = L.marker(
+                [51.0819768, -114.009815],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_0f0d42929ab67223b0c5e941d0243215 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47cdff863d10bec01fde26a368f54f6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d6f746486f38684afdb4b1f821c327a = $(`<div id="html_1d6f746486f38684afdb4b1f821c327a" style="width: 100.0%; height: 100.0%;">NE calgary: 2 students</div>`)[0];
+                popup_47cdff863d10bec01fde26a368f54f6d.setContent(html_1d6f746486f38684afdb4b1f821c327a);
+            
+        
+
+        marker_c3fe70862e625de24309be20734c9ea4.bindPopup(popup_47cdff863d10bec01fde26a368f54f6d)
+        ;
+
+        
+    
+    
+                marker_c3fe70862e625de24309be20734c9ea4.setIcon(icon_0f0d42929ab67223b0c5e941d0243215);
+            
+    
+            var marker_5d72abd4cef869bbb135b43bb6ba7ccc = L.marker(
+                [51.0930748, -114.1260514],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_019e478fc277b2ea99a91f82b6561d75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a9ed7b39bad07c5f79e218f59289501 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67720c9c2a7797cac1a60d36189ca7ee = $(`<div id="html_67720c9c2a7797cac1a60d36189ca7ee" style="width: 100.0%; height: 100.0%;">Brentwood: 2 students</div>`)[0];
+                popup_6a9ed7b39bad07c5f79e218f59289501.setContent(html_67720c9c2a7797cac1a60d36189ca7ee);
+            
+        
+
+        marker_5d72abd4cef869bbb135b43bb6ba7ccc.bindPopup(popup_6a9ed7b39bad07c5f79e218f59289501)
+        ;
+
+        
+    
+    
+                marker_5d72abd4cef869bbb135b43bb6ba7ccc.setIcon(icon_019e478fc277b2ea99a91f82b6561d75);
+            
+    
+            var marker_c7b79aa2b2b6f10a8f27ab9f0ef7cf15 = L.marker(
+                [50.8748779, -113.9489154],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_50ce283af4a5d3f7417cd7fc446a8453 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b5d596d05a24173cb4a3b36922e6640 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f19a5e340613619965967832709b190 = $(`<div id="html_0f19a5e340613619965967832709b190" style="width: 100.0%; height: 100.0%;">Seton: 1 students</div>`)[0];
+                popup_9b5d596d05a24173cb4a3b36922e6640.setContent(html_0f19a5e340613619965967832709b190);
+            
+        
+
+        marker_c7b79aa2b2b6f10a8f27ab9f0ef7cf15.bindPopup(popup_9b5d596d05a24173cb4a3b36922e6640)
+        ;
+
+        
+    
+    
+                marker_c7b79aa2b2b6f10a8f27ab9f0ef7cf15.setIcon(icon_50ce283af4a5d3f7417cd7fc446a8453);
+            
+    
+            var marker_807ff960d0bba8de500d6532816d263c = L.marker(
+                [51.084919, -114.1323225],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_b7f7c6f46da8dd2024ce7318dc194d8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_335980bec415001e307690942ab95fb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66449f5ba88f25d0b9cd4decc9865401 = $(`<div id="html_66449f5ba88f25d0b9cd4decc9865401" style="width: 100.0%; height: 100.0%;">Varsity/Brentwood: 1 students</div>`)[0];
+                popup_335980bec415001e307690942ab95fb2.setContent(html_66449f5ba88f25d0b9cd4decc9865401);
+            
+        
+
+        marker_807ff960d0bba8de500d6532816d263c.bindPopup(popup_335980bec415001e307690942ab95fb2)
+        ;
+
+        
+    
+    
+                marker_807ff960d0bba8de500d6532816d263c.setIcon(icon_b7f7c6f46da8dd2024ce7318dc194d8c);
+            
+    
+            var marker_729a3e3ddd31c5e49be2720e3de72629 = L.marker(
+                [51.166383, -114.1418532],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_96f56c9d913657abe46db52c0b017411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d74651e6b033aec39bd93b5a626abe25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_550e455e9542641892dfe57bb4897fce = $(`<div id="html_550e455e9542641892dfe57bb4897fce" style="width: 100.0%; height: 100.0%;">Kincora, NW Calgary: 1 students</div>`)[0];
+                popup_d74651e6b033aec39bd93b5a626abe25.setContent(html_550e455e9542641892dfe57bb4897fce);
+            
+        
+
+        marker_729a3e3ddd31c5e49be2720e3de72629.bindPopup(popup_d74651e6b033aec39bd93b5a626abe25)
+        ;
+
+        
+    
+    
+                marker_729a3e3ddd31c5e49be2720e3de72629.setIcon(icon_96f56c9d913657abe46db52c0b017411);
+            
+    
+            var marker_d5a06a3991c7d32aac9b1686012ebabe = L.marker(
+                [51.0598811, -113.9489467],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_4761364b3529c55dede6a582cf888aa4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_535928321edc55981856ac7ed4f2c952 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7533d3990e9044d313abf70294905b90 = $(`<div id="html_7533d3990e9044d313abf70294905b90" style="width: 100.0%; height: 100.0%;">Marlborough Park: 1 students</div>`)[0];
+                popup_535928321edc55981856ac7ed4f2c952.setContent(html_7533d3990e9044d313abf70294905b90);
+            
+        
+
+        marker_d5a06a3991c7d32aac9b1686012ebabe.bindPopup(popup_535928321edc55981856ac7ed4f2c952)
+        ;
+
+        
+    
+    
+                marker_d5a06a3991c7d32aac9b1686012ebabe.setIcon(icon_4761364b3529c55dede6a582cf888aa4);
+            
+    
+            var marker_0cefa58537d893f40e85df9985550f0e = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_25795de6b5ebfc63583481fdbb194156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1bceb7bf730c42362d3d445fe54d664 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfcf47e30c3538c255084ccfe2b51bb7 = $(`<div id="html_bfcf47e30c3538c255084ccfe2b51bb7" style="width: 100.0%; height: 100.0%;">Nw: 1 students</div>`)[0];
+                popup_b1bceb7bf730c42362d3d445fe54d664.setContent(html_bfcf47e30c3538c255084ccfe2b51bb7);
+            
+        
+
+        marker_0cefa58537d893f40e85df9985550f0e.bindPopup(popup_b1bceb7bf730c42362d3d445fe54d664)
+        ;
+
+        
+    
+    
+                marker_0cefa58537d893f40e85df9985550f0e.setIcon(icon_25795de6b5ebfc63583481fdbb194156);
+            
+    
+            var marker_ddb3acf0361a3975d195df2afb0f357e = L.marker(
+                [51.0204457, -114.1891083],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e8fff226b2bfb678c1d94dca14f436be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd0530248b33257bd15ffce32b9aec62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45fa606e6b3e62c2e7e4f6b0299b6917 = $(`<div id="html_45fa606e6b3e62c2e7e4f6b0299b6917" style="width: 100.0%; height: 100.0%;">Springbank Hill (SW): 1 students</div>`)[0];
+                popup_bd0530248b33257bd15ffce32b9aec62.setContent(html_45fa606e6b3e62c2e7e4f6b0299b6917);
+            
+        
+
+        marker_ddb3acf0361a3975d195df2afb0f357e.bindPopup(popup_bd0530248b33257bd15ffce32b9aec62)
+        ;
+
+        
+    
+    
+                marker_ddb3acf0361a3975d195df2afb0f357e.setIcon(icon_e8fff226b2bfb678c1d94dca14f436be);
+            
+    
+            var marker_01aae2781ef885821b4e063d02101275 = L.marker(
+                [51.0640427, -114.1472491],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_bddf5f1e1062553f82a569d27de5d1ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc053d9819f09531747ec3b92b05bffa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d5b2e0e216ccb2f47535c0876143b1e = $(`<div id="html_1d5b2e0e216ccb2f47535c0876143b1e" style="width: 100.0%; height: 100.0%;">NW Calgary, bowness: 1 students</div>`)[0];
+                popup_cc053d9819f09531747ec3b92b05bffa.setContent(html_1d5b2e0e216ccb2f47535c0876143b1e);
+            
+        
+
+        marker_01aae2781ef885821b4e063d02101275.bindPopup(popup_cc053d9819f09531747ec3b92b05bffa)
+        ;
+
+        
+    
+    
+                marker_01aae2781ef885821b4e063d02101275.setIcon(icon_bddf5f1e1062553f82a569d27de5d1ee);
+            
+    
+            var marker_79d7caaa43a49de3a630a47df6d882e8 = L.marker(
+                [51.1313416, -114.177447],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_f5567ebeeb50c662326c43f6960c22d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ff91154276325cfc0acbec0c39f038d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a1adf32fc4a797299c577f6e1eca21d = $(`<div id="html_6a1adf32fc4a797299c577f6e1eca21d" style="width: 100.0%; height: 100.0%;">Hawkwood: 1 students</div>`)[0];
+                popup_1ff91154276325cfc0acbec0c39f038d.setContent(html_6a1adf32fc4a797299c577f6e1eca21d);
+            
+        
+
+        marker_79d7caaa43a49de3a630a47df6d882e8.bindPopup(popup_1ff91154276325cfc0acbec0c39f038d)
+        ;
+
+        
+    
+    
+                marker_79d7caaa43a49de3a630a47df6d882e8.setIcon(icon_f5567ebeeb50c662326c43f6960c22d0);
+            
+    
+            var marker_048a98e33a68cfcd5a60e73d126bcdbd = L.marker(
+                [51.0909975, -114.1557593],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_4839bfa0203857f1c2d45284aa6123d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f43ab4531728a5d3dc34a5f0b1415d25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4db6de38266419b4245acfa3dfa3b90 = $(`<div id="html_d4db6de38266419b4245acfa3dfa3b90" style="width: 100.0%; height: 100.0%;">Varsity: 1 students</div>`)[0];
+                popup_f43ab4531728a5d3dc34a5f0b1415d25.setContent(html_d4db6de38266419b4245acfa3dfa3b90);
+            
+        
+
+        marker_048a98e33a68cfcd5a60e73d126bcdbd.bindPopup(popup_f43ab4531728a5d3dc34a5f0b1415d25)
+        ;
+
+        
+    
+    
+                marker_048a98e33a68cfcd5a60e73d126bcdbd.setIcon(icon_4839bfa0203857f1c2d45284aa6123d1);
+            
+    
+            var marker_0ee93ad7179bd93babd9b1190e0814a0 = L.marker(
+                [51.0063354, -114.0777846],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_023977ff0acd77e3c5c5e8245dee6181 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35f56980841c2a36911451c2134c2d0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a34af365b85343f0d1e5b75ca28c19e = $(`<div id="html_7a34af365b85343f0d1e5b75ca28c19e" style="width: 100.0%; height: 100.0%;">Windsor Park, SW: 1 students</div>`)[0];
+                popup_35f56980841c2a36911451c2134c2d0b.setContent(html_7a34af365b85343f0d1e5b75ca28c19e);
+            
+        
+
+        marker_0ee93ad7179bd93babd9b1190e0814a0.bindPopup(popup_35f56980841c2a36911451c2134c2d0b)
+        ;
+
+        
+    
+    
+                marker_0ee93ad7179bd93babd9b1190e0814a0.setIcon(icon_023977ff0acd77e3c5c5e8245dee6181);
+            
+    
+            var marker_df1820cef45b97b3d9b202a1042987ae = L.marker(
+                [51.1613607, -114.124535],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_6036eb1ad05bdfa2b70ed8121f745304 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34b5c61fa80892ae3cbc71f0151d2ee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebe9a3f3fb41d94f1c987b41531736fa = $(`<div id="html_ebe9a3f3fb41d94f1c987b41531736fa" style="width: 100.0%; height: 100.0%;">Evanston Nw Calgary: 1 students</div>`)[0];
+                popup_34b5c61fa80892ae3cbc71f0151d2ee3.setContent(html_ebe9a3f3fb41d94f1c987b41531736fa);
+            
+        
+
+        marker_df1820cef45b97b3d9b202a1042987ae.bindPopup(popup_34b5c61fa80892ae3cbc71f0151d2ee3)
+        ;
+
+        
+    
+    
+                marker_df1820cef45b97b3d9b202a1042987ae.setIcon(icon_6036eb1ad05bdfa2b70ed8121f745304);
+            
+    
+            var marker_2c0b13e19bf51cf9ece1cb3130ca1b22 = L.marker(
+                [51.0546848, -114.085926],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_621506bf64a184c8d410b882671712f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_444da61204c8afbba46c68c18895734a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce8515dffe427e8f1859cf72f7930ff2 = $(`<div id="html_ce8515dffe427e8f1859cf72f7930ff2" style="width: 100.0%; height: 100.0%;">Kensington: 1 students</div>`)[0];
+                popup_444da61204c8afbba46c68c18895734a.setContent(html_ce8515dffe427e8f1859cf72f7930ff2);
+            
+        
+
+        marker_2c0b13e19bf51cf9ece1cb3130ca1b22.bindPopup(popup_444da61204c8afbba46c68c18895734a)
+        ;
+
+        
+    
+    
+                marker_2c0b13e19bf51cf9ece1cb3130ca1b22.setIcon(icon_621506bf64a184c8d410b882671712f7);
+            
+    
+            var marker_eb165ae36ceca0c53225280f95bbebec = L.marker(
+                [51.0380285, -114.0754742],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_c09da57582f8cb913ae6c7332ae7b301 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efaf439dc37bda2d7450d1628b5fe2aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d92da279d01a8510061d64c3b9002bf = $(`<div id="html_2d92da279d01a8510061d64c3b9002bf" style="width: 100.0%; height: 100.0%;">17th Ave SW: 1 students</div>`)[0];
+                popup_efaf439dc37bda2d7450d1628b5fe2aa.setContent(html_2d92da279d01a8510061d64c3b9002bf);
+            
+        
+
+        marker_eb165ae36ceca0c53225280f95bbebec.bindPopup(popup_efaf439dc37bda2d7450d1628b5fe2aa)
+        ;
+
+        
+    
+    
+                marker_eb165ae36ceca0c53225280f95bbebec.setIcon(icon_c09da57582f8cb913ae6c7332ae7b301);
+            
+    
+            var marker_90fffd8e37431f5ec1ab989dd4b72ee0 = L.marker(
+                [51.0399531, -114.1365332],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_dc11035775c528058adcac21c55b5dbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd5a774f7b1b01ebc45ad77096755871 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cdd059cbbd2fe293bf9288e6e43435a = $(`<div id="html_9cdd059cbbd2fe293bf9288e6e43435a" style="width: 100.0%; height: 100.0%;">Westbrook: 1 students</div>`)[0];
+                popup_dd5a774f7b1b01ebc45ad77096755871.setContent(html_9cdd059cbbd2fe293bf9288e6e43435a);
+            
+        
+
+        marker_90fffd8e37431f5ec1ab989dd4b72ee0.bindPopup(popup_dd5a774f7b1b01ebc45ad77096755871)
+        ;
+
+        
+    
+    
+                marker_90fffd8e37431f5ec1ab989dd4b72ee0.setIcon(icon_dc11035775c528058adcac21c55b5dbc);
+            
+    
+            var marker_ed1d1f4d77c5b407b2678925df76ba8e = L.marker(
+                [50.9207264, -113.9470847],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_44dfdc377f148d2354dc186a414e8982 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a4a30b344810ebf5e97f24de481c25a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93b036fa8f5dbbbf417355d008f13fb7 = $(`<div id="html_93b036fa8f5dbbbf417355d008f13fb7" style="width: 100.0%; height: 100.0%;">New Brighton: 1 students</div>`)[0];
+                popup_0a4a30b344810ebf5e97f24de481c25a.setContent(html_93b036fa8f5dbbbf417355d008f13fb7);
+            
+        
+
+        marker_ed1d1f4d77c5b407b2678925df76ba8e.bindPopup(popup_0a4a30b344810ebf5e97f24de481c25a)
+        ;
+
+        
+    
+    
+                marker_ed1d1f4d77c5b407b2678925df76ba8e.setIcon(icon_44dfdc377f148d2354dc186a414e8982);
+            
+    
+            var marker_770e945a1dfb896694b748bbab73ebe1 = L.marker(
+                [51.1178849, -114.2195667],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e8a6fb11a4f4b8bb495d669807b4f25c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fcf487fb5b88544e02fe685160501a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_589c4c9bf92b2257718d19e9d767b8af = $(`<div id="html_589c4c9bf92b2257718d19e9d767b8af" style="width: 100.0%; height: 100.0%;">Home: 1 students</div>`)[0];
+                popup_9fcf487fb5b88544e02fe685160501a3.setContent(html_589c4c9bf92b2257718d19e9d767b8af);
+            
+        
+
+        marker_770e945a1dfb896694b748bbab73ebe1.bindPopup(popup_9fcf487fb5b88544e02fe685160501a3)
+        ;
+
+        
+    
+    
+                marker_770e945a1dfb896694b748bbab73ebe1.setIcon(icon_e8a6fb11a4f4b8bb495d669807b4f25c);
+            
+    
+            var marker_ba71b3a4564d7c0ed5db21910235339d = L.marker(
+                [51.1712925, -114.1163524],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_3f4c6b277885de298deeed5287e009c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dbe1b4f1c4b5ee18e65ed636e956afc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfcb7ea18f2e1154fa01898d98dfadd4 = $(`<div id="html_cfcb7ea18f2e1154fa01898d98dfadd4" style="width: 100.0%; height: 100.0%;">Evanston: 1 students</div>`)[0];
+                popup_4dbe1b4f1c4b5ee18e65ed636e956afc.setContent(html_cfcb7ea18f2e1154fa01898d98dfadd4);
+            
+        
+
+        marker_ba71b3a4564d7c0ed5db21910235339d.bindPopup(popup_4dbe1b4f1c4b5ee18e65ed636e956afc)
+        ;
+
+        
+    
+    
+                marker_ba71b3a4564d7c0ed5db21910235339d.setIcon(icon_3f4c6b277885de298deeed5287e009c8);
+            
+    
+            var marker_dadf9bf39da31a545dd688f3c92e1736 = L.marker(
+                [51.1587035, -113.9422989],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_1f1a7d24a3e48060625db6d06a4f9f00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4fc2c6480436419dd4b549ed0455099 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96008cd9a7f2a98b905b9d04e13ebfc1 = $(`<div id="html_96008cd9a7f2a98b905b9d04e13ebfc1" style="width: 100.0%; height: 100.0%;">Cornerstone, NE: 1 students</div>`)[0];
+                popup_f4fc2c6480436419dd4b549ed0455099.setContent(html_96008cd9a7f2a98b905b9d04e13ebfc1);
+            
+        
+
+        marker_dadf9bf39da31a545dd688f3c92e1736.bindPopup(popup_f4fc2c6480436419dd4b549ed0455099)
+        ;
+
+        
+    
+    
+                marker_dadf9bf39da31a545dd688f3c92e1736.setIcon(icon_1f1a7d24a3e48060625db6d06a4f9f00);
+            
+    
+            var marker_6d56674f18bfc6ff8451dd6820205c0c = L.marker(
+                [51.0417658, -114.1396142],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_850cbd681c2c0f4b76e8538e8967be5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf9f0b41994e4d40dadda28c2a7757ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5909ca9d292c15cfa7bc49bcf4680b0f = $(`<div id="html_5909ca9d292c15cfa7bc49bcf4680b0f" style="width: 100.0%; height: 100.0%;">SW: 1 students</div>`)[0];
+                popup_bf9f0b41994e4d40dadda28c2a7757ea.setContent(html_5909ca9d292c15cfa7bc49bcf4680b0f);
+            
+        
+
+        marker_6d56674f18bfc6ff8451dd6820205c0c.bindPopup(popup_bf9f0b41994e4d40dadda28c2a7757ea)
+        ;
+
+        
+    
+    
+                marker_6d56674f18bfc6ff8451dd6820205c0c.setIcon(icon_850cbd681c2c0f4b76e8538e8967be5e);
+            
+    
+            var marker_800e3b8a892d2b6069a094eaae1c6b42 = L.marker(
+                [50.9591032, -114.1246491],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e63fc0ec5e7954fc2035316289700bf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12e958941985648330525e597c1b541d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e63a2b9d072428ac61534a6f813b1aea = $(`<div id="html_e63a2b9d072428ac61534a6f813b1aea" style="width: 100.0%; height: 100.0%;">Cedarbrae SW: 1 students</div>`)[0];
+                popup_12e958941985648330525e597c1b541d.setContent(html_e63a2b9d072428ac61534a6f813b1aea);
+            
+        
+
+        marker_800e3b8a892d2b6069a094eaae1c6b42.bindPopup(popup_12e958941985648330525e597c1b541d)
+        ;
+
+        
+    
+    
+                marker_800e3b8a892d2b6069a094eaae1c6b42.setIcon(icon_e63fc0ec5e7954fc2035316289700bf2);
+            
+    
+            var marker_b3690ab70a88e847e71564ac9b80c555 = L.marker(
+                [50.8906047, -113.9595647],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_d0f5c4110b9b0d721cc6acaff2ee7291 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be8bc43ada661ae426a3188f7817784d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e374a1677149065d2cc1921d3a58ffd8 = $(`<div id="html_e374a1677149065d2cc1921d3a58ffd8" style="width: 100.0%; height: 100.0%;">Auburn bay: 1 students</div>`)[0];
+                popup_be8bc43ada661ae426a3188f7817784d.setContent(html_e374a1677149065d2cc1921d3a58ffd8);
+            
+        
+
+        marker_b3690ab70a88e847e71564ac9b80c555.bindPopup(popup_be8bc43ada661ae426a3188f7817784d)
+        ;
+
+        
+    
+    
+                marker_b3690ab70a88e847e71564ac9b80c555.setIcon(icon_d0f5c4110b9b0d721cc6acaff2ee7291);
+            
+    
+            var marker_ea7883e90912f1011a8bab03f8ccbcea = L.marker(
+                [50.942554, -114.1288526],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e2d23f914fa4eb8830f84bfc627fc897 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d62fbc17c949f2b506a6cf9981c8901 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ce762fb2e3d3a8774a5baa2b9389214 = $(`<div id="html_3ce762fb2e3d3a8774a5baa2b9389214" style="width: 100.0%; height: 100.0%;">Woodbine: 1 students</div>`)[0];
+                popup_8d62fbc17c949f2b506a6cf9981c8901.setContent(html_3ce762fb2e3d3a8774a5baa2b9389214);
+            
+        
+
+        marker_ea7883e90912f1011a8bab03f8ccbcea.bindPopup(popup_8d62fbc17c949f2b506a6cf9981c8901)
+        ;
+
+        
+    
+    
+                marker_ea7883e90912f1011a8bab03f8ccbcea.setIcon(icon_e2d23f914fa4eb8830f84bfc627fc897);
+            
+    
+            var marker_2b0dc2de0a7dcd09f5af3b78061ffebc = L.marker(
+                [50.9007131, -114.1105152],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e8ceb1510c06f9e9300a403dfd5410bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beb700b8a21f5cdde660c4466cd969d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fb4aa26822cad91e592a1f142c9c152 = $(`<div id="html_7fb4aa26822cad91e592a1f142c9c152" style="width: 100.0%; height: 100.0%;">Bridlewood: 1 students</div>`)[0];
+                popup_beb700b8a21f5cdde660c4466cd969d1.setContent(html_7fb4aa26822cad91e592a1f142c9c152);
+            
+        
+
+        marker_2b0dc2de0a7dcd09f5af3b78061ffebc.bindPopup(popup_beb700b8a21f5cdde660c4466cd969d1)
+        ;
+
+        
+    
+    
+                marker_2b0dc2de0a7dcd09f5af3b78061ffebc.setIcon(icon_e8ceb1510c06f9e9300a403dfd5410bc);
+            
+    
+            var marker_9453a8d27a0534211405f08dda3da314 = L.marker(
+                [50.9690109, -114.1279109],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_4ecd38263aad326c4f52450e3c8f32cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_948c9397fbaaf1d4a9308dd8258ff568 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc59faeb1db151ca41d8ba6221202d26 = $(`<div id="html_bc59faeb1db151ca41d8ba6221202d26" style="width: 100.0%; height: 100.0%;">Oakridge: 1 students</div>`)[0];
+                popup_948c9397fbaaf1d4a9308dd8258ff568.setContent(html_bc59faeb1db151ca41d8ba6221202d26);
+            
+        
+
+        marker_9453a8d27a0534211405f08dda3da314.bindPopup(popup_948c9397fbaaf1d4a9308dd8258ff568)
+        ;
+
+        
+    
+    
+                marker_9453a8d27a0534211405f08dda3da314.setIcon(icon_4ecd38263aad326c4f52450e3c8f32cb);
+            
+    
+            var marker_5108074cad4a4636c80329b9501f9e8e = L.marker(
+                [51.0464963, -114.0506433],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_746116dc3cb3349a300d91b62289bf6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a2efcde2ad32ea29226514d656fd7e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e9350db314007c50e4e43ba03d9537a = $(`<div id="html_6e9350db314007c50e4e43ba03d9537a" style="width: 100.0%; height: 100.0%;">Downtown: 1 students</div>`)[0];
+                popup_0a2efcde2ad32ea29226514d656fd7e7.setContent(html_6e9350db314007c50e4e43ba03d9537a);
+            
+        
+
+        marker_5108074cad4a4636c80329b9501f9e8e.bindPopup(popup_0a2efcde2ad32ea29226514d656fd7e7)
+        ;
+
+        
+    
+    
+                marker_5108074cad4a4636c80329b9501f9e8e.setIcon(icon_746116dc3cb3349a300d91b62289bf6b);
+            
+    
+            var marker_09abec9f6a875f52378aeb28a82a1e14 = L.marker(
+                [51.1786962, -114.0776987],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_0e6b70983166d3f5025f199042014833 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6814bb8ff405a6f4a3294fd09ca1aacf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad992f98eafa14c5e1535d8e86367609 = $(`<div id="html_ad992f98eafa14c5e1535d8e86367609" style="width: 100.0%; height: 100.0%;">Carrington NW: 1 students</div>`)[0];
+                popup_6814bb8ff405a6f4a3294fd09ca1aacf.setContent(html_ad992f98eafa14c5e1535d8e86367609);
+            
+        
+
+        marker_09abec9f6a875f52378aeb28a82a1e14.bindPopup(popup_6814bb8ff405a6f4a3294fd09ca1aacf)
+        ;
+
+        
+    
+    
+                marker_09abec9f6a875f52378aeb28a82a1e14.setIcon(icon_0e6b70983166d3f5025f199042014833);
+            
+    
+            var marker_1f04728febcffc4b97b3134e87899c07 = L.marker(
+                [51.0631292, -114.0878809],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e76cf43d469539cfe9f783d10eef7244 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f3945748ff79fff867c2aa4bfc54ea8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e585bea4185c2201e58c82a6e8bbd0f = $(`<div id="html_6e585bea4185c2201e58c82a6e8bbd0f" style="width: 100.0%; height: 100.0%;">nw: 1 students</div>`)[0];
+                popup_0f3945748ff79fff867c2aa4bfc54ea8.setContent(html_6e585bea4185c2201e58c82a6e8bbd0f);
+            
+        
+
+        marker_1f04728febcffc4b97b3134e87899c07.bindPopup(popup_0f3945748ff79fff867c2aa4bfc54ea8)
+        ;
+
+        
+    
+    
+                marker_1f04728febcffc4b97b3134e87899c07.setIcon(icon_e76cf43d469539cfe9f783d10eef7244);
+            
+    
+            var marker_9089d40fa86fbdd391898c2991ee0a77 = L.marker(
+                [50.8565939, -114.0002516],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_27566e0db53eba2314270be7f780aa4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3de03abf301cb7a7b63e973dec2a1f29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_888bde35cc583d01f90a87e84a29cc60 = $(`<div id="html_888bde35cc583d01f90a87e84a29cc60" style="width: 100.0%; height: 100.0%;">Legacy SE: 1 students</div>`)[0];
+                popup_3de03abf301cb7a7b63e973dec2a1f29.setContent(html_888bde35cc583d01f90a87e84a29cc60);
+            
+        
+
+        marker_9089d40fa86fbdd391898c2991ee0a77.bindPopup(popup_3de03abf301cb7a7b63e973dec2a1f29)
+        ;
+
+        
+    
+    
+                marker_9089d40fa86fbdd391898c2991ee0a77.setIcon(icon_27566e0db53eba2314270be7f780aa4e);
+            
+    
+            var marker_71e580dcadb6050f831880d120bffd90 = L.marker(
+                [51.0647776, -113.95884],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e0c03e91a4ee7521203d9a52892c410a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_445083266cf585457122585df55a6b87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e12d63bf172c8845d39d4f9b2a64207 = $(`<div id="html_4e12d63bf172c8845d39d4f9b2a64207" style="width: 100.0%; height: 100.0%;">Marlborough Area: 1 students</div>`)[0];
+                popup_445083266cf585457122585df55a6b87.setContent(html_4e12d63bf172c8845d39d4f9b2a64207);
+            
+        
+
+        marker_71e580dcadb6050f831880d120bffd90.bindPopup(popup_445083266cf585457122585df55a6b87)
+        ;
+
+        
+    
+    
+                marker_71e580dcadb6050f831880d120bffd90.setIcon(icon_e0c03e91a4ee7521203d9a52892c410a);
+            
+    
+            var marker_fe6c4922e784081319ecb07adc00e89d = L.marker(
+                [50.8987423, -114.0833678],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_df8be62c1b2f13e4819a894425c7520a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e0f13896b01bce3df89c12d235ebe4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19031486d71e3f25a98b0e1d23b820f2 = $(`<div id="html_19031486d71e3f25a98b0e1d23b820f2" style="width: 100.0%; height: 100.0%;">Somerset: 1 students</div>`)[0];
+                popup_3e0f13896b01bce3df89c12d235ebe4a.setContent(html_19031486d71e3f25a98b0e1d23b820f2);
+            
+        
+
+        marker_fe6c4922e784081319ecb07adc00e89d.bindPopup(popup_3e0f13896b01bce3df89c12d235ebe4a)
+        ;
+
+        
+    
+    
+                marker_fe6c4922e784081319ecb07adc00e89d.setIcon(icon_df8be62c1b2f13e4819a894425c7520a);
+            
+    
+            var marker_db5f816f638041f417201e39baf62665 = L.marker(
+                [50.988422, -114.0092464],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_b6d21f8c2ed7576f3c69e71d1e57b168 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab949cb2d8ab15c5d4d55e9cb7119a41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc8e7712ffd22ca4aa13d70c4197d327 = $(`<div id="html_fc8e7712ffd22ca4aa13d70c4197d327" style="width: 100.0%; height: 100.0%;">Ogden: 1 students</div>`)[0];
+                popup_ab949cb2d8ab15c5d4d55e9cb7119a41.setContent(html_fc8e7712ffd22ca4aa13d70c4197d327);
+            
+        
+
+        marker_db5f816f638041f417201e39baf62665.bindPopup(popup_ab949cb2d8ab15c5d4d55e9cb7119a41)
+        ;
+
+        
+    
+    
+                marker_db5f816f638041f417201e39baf62665.setIcon(icon_b6d21f8c2ed7576f3c69e71d1e57b168);
+            
+    
+            var marker_429e82e502c9317e13a8c001435863be = L.marker(
+                [51.1187237, -114.068287],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_7b029dcad1b1bf2e0e1706545a04f184 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_852ed4a915c191e0283e647cbfac38d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48bc658b8d5b80a7c26edfca2f914913 = $(`<div id="html_48bc658b8d5b80a7c26edfca2f914913" style="width: 100.0%; height: 100.0%;">NW Huntington Hills: 1 students</div>`)[0];
+                popup_852ed4a915c191e0283e647cbfac38d1.setContent(html_48bc658b8d5b80a7c26edfca2f914913);
+            
+        
+
+        marker_429e82e502c9317e13a8c001435863be.bindPopup(popup_852ed4a915c191e0283e647cbfac38d1)
+        ;
+
+        
+    
+    
+                marker_429e82e502c9317e13a8c001435863be.setIcon(icon_7b029dcad1b1bf2e0e1706545a04f184);
+            
+    
+            var marker_ba826dabff9dc6b2b4f89e8aadf352dd = L.marker(
+                [51.1129005, -114.1448609],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_4ae636667ff3d492164fae3959364fe7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccf1ff68a271286da3f53a544db6a62b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5676de1a80405a890c1d292337417920 = $(`<div id="html_5676de1a80405a890c1d292337417920" style="width: 100.0%; height: 100.0%;">Edgemont NW: 1 students</div>`)[0];
+                popup_ccf1ff68a271286da3f53a544db6a62b.setContent(html_5676de1a80405a890c1d292337417920);
+            
+        
+
+        marker_ba826dabff9dc6b2b4f89e8aadf352dd.bindPopup(popup_ccf1ff68a271286da3f53a544db6a62b)
+        ;
+
+        
+    
+    
+                marker_ba826dabff9dc6b2b4f89e8aadf352dd.setIcon(icon_4ae636667ff3d492164fae3959364fe7);
+            
+    
+            var marker_43f5e31cae0316f9528175aca753e926 = L.marker(
+                [51.033333, -113.966667],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_f7471e57eaa8e772ebbb52ca3d7a1c82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dabf4b6a4f9d38cc4501ae2e4bbc3fe3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d49c2cb7d8fde254eded4800db79ae3 = $(`<div id="html_1d49c2cb7d8fde254eded4800db79ae3" style="width: 100.0%; height: 100.0%;">forest lawn: 1 students</div>`)[0];
+                popup_dabf4b6a4f9d38cc4501ae2e4bbc3fe3.setContent(html_1d49c2cb7d8fde254eded4800db79ae3);
+            
+        
+
+        marker_43f5e31cae0316f9528175aca753e926.bindPopup(popup_dabf4b6a4f9d38cc4501ae2e4bbc3fe3)
+        ;
+
+        
+    
+    
+                marker_43f5e31cae0316f9528175aca753e926.setIcon(icon_f7471e57eaa8e772ebbb52ca3d7a1c82);
+            
+    
+            var marker_bf62d91131b528c680f85859c466bc5b = L.marker(
+                [50.9301743, -114.016583],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_9d49cca9c930dd3485d40915e841b56f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e178cc97cc8b72f589b857e64ac34a87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea811599571c6316681aaed0d69c5ed0 = $(`<div id="html_ea811599571c6316681aaed0d69c5ed0" style="width: 100.0%; height: 100.0%;">Deer Ridge SE: 1 students</div>`)[0];
+                popup_e178cc97cc8b72f589b857e64ac34a87.setContent(html_ea811599571c6316681aaed0d69c5ed0);
+            
+        
+
+        marker_bf62d91131b528c680f85859c466bc5b.bindPopup(popup_e178cc97cc8b72f589b857e64ac34a87)
+        ;
+
+        
+    
+    
+                marker_bf62d91131b528c680f85859c466bc5b.setIcon(icon_9d49cca9c930dd3485d40915e841b56f);
+            
+    
+            var marker_adc883d8c2b8746214b68942908c6bd4 = L.marker(
+                [51.1200131, -114.1864052],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_2b9621092f2c8ebada130297a94e4cfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b753185aed9d341a8e8125abd5511a9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f1c1e50b8436d6e6b2fc0a9049be0fe = $(`<div id="html_9f1c1e50b8436d6e6b2fc0a9049be0fe" style="width: 100.0%; height: 100.0%;">Ranchlands: 1 students</div>`)[0];
+                popup_b753185aed9d341a8e8125abd5511a9a.setContent(html_9f1c1e50b8436d6e6b2fc0a9049be0fe);
+            
+        
+
+        marker_adc883d8c2b8746214b68942908c6bd4.bindPopup(popup_b753185aed9d341a8e8125abd5511a9a)
+        ;
+
+        
+    
+    
+                marker_adc883d8c2b8746214b68942908c6bd4.setIcon(icon_2b9621092f2c8ebada130297a94e4cfe);
+            
+    
+            var marker_635195033fa63ca9734f4060cb43e492 = L.marker(
+                [50.9063403, -114.0747722],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_57b148003b3e7e5ac037310b9e04a7a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6192765ccaf3ab5a4beced0cd6111653 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82db013f320e044b101520f7c918f124 = $(`<div id="html_82db013f320e044b101520f7c918f124" style="width: 100.0%; height: 100.0%;">Shawnessey: 1 students</div>`)[0];
+                popup_6192765ccaf3ab5a4beced0cd6111653.setContent(html_82db013f320e044b101520f7c918f124);
+            
+        
+
+        marker_635195033fa63ca9734f4060cb43e492.bindPopup(popup_6192765ccaf3ab5a4beced0cd6111653)
+        ;
+
+        
+    
+    
+                marker_635195033fa63ca9734f4060cb43e492.setIcon(icon_57b148003b3e7e5ac037310b9e04a7a2);
+            
+    
+            var marker_0be59a579d16ad8d047407cdd7edc666 = L.marker(
+                [50.9424353, -114.1093591],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_1baf6ce1050acc150162154608e4c28a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6713ba5972db7167b1d04d2d191f9dc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8d560d15e7de3da39c986499277348f = $(`<div id="html_e8d560d15e7de3da39c986499277348f" style="width: 100.0%; height: 100.0%;">Woodlands: 1 students</div>`)[0];
+                popup_6713ba5972db7167b1d04d2d191f9dc7.setContent(html_e8d560d15e7de3da39c986499277348f);
+            
+        
+
+        marker_0be59a579d16ad8d047407cdd7edc666.bindPopup(popup_6713ba5972db7167b1d04d2d191f9dc7)
+        ;
+
+        
+    
+    
+                marker_0be59a579d16ad8d047407cdd7edc666.setIcon(icon_1baf6ce1050acc150162154608e4c28a);
+            
+    
+            var marker_f4c072dd27f507fbfdecbf51efaba9d0 = L.marker(
+                [51.044845, -113.9901949],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_78837a41d2eb4f1e88cade2192a7407e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_931f41f58a8d5926c7e69025bb96a875 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_669cd132c12c0519a86ca87d36e913ea = $(`<div id="html_669cd132c12c0519a86ca87d36e913ea" style="width: 100.0%; height: 100.0%;">Radisson Heights: 1 students</div>`)[0];
+                popup_931f41f58a8d5926c7e69025bb96a875.setContent(html_669cd132c12c0519a86ca87d36e913ea);
+            
+        
+
+        marker_f4c072dd27f507fbfdecbf51efaba9d0.bindPopup(popup_931f41f58a8d5926c7e69025bb96a875)
+        ;
+
+        
+    
+    
+                marker_f4c072dd27f507fbfdecbf51efaba9d0.setIcon(icon_78837a41d2eb4f1e88cade2192a7407e);
+            
+    
+            var marker_c83adc2d77821aed99da26257d980da4 = L.marker(
+                [51.1481976, -114.0537778],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_8328afa0d0307ca1655168d40b15a64a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_597cc4e6e03989581c6e50368ad73607 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e3e41f877dacc78d7951e7d05d9f3af = $(`<div id="html_8e3e41f877dacc78d7951e7d05d9f3af" style="width: 100.0%; height: 100.0%;">Harvest Hills: 1 students</div>`)[0];
+                popup_597cc4e6e03989581c6e50368ad73607.setContent(html_8e3e41f877dacc78d7951e7d05d9f3af);
+            
+        
+
+        marker_c83adc2d77821aed99da26257d980da4.bindPopup(popup_597cc4e6e03989581c6e50368ad73607)
+        ;
+
+        
+    
+    
+                marker_c83adc2d77821aed99da26257d980da4.setIcon(icon_8328afa0d0307ca1655168d40b15a64a);
+            
+    
+            var marker_6d936a8297a33e66bbadfc1dc945e8e1 = L.marker(
+                [51.1510854, -114.1126719],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_a4482e46489391d4165a3c8fdb341541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eda6a0111312c8aa56ff9880ac4f8423 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_178b3ac2317c4f453ce8028b5a64ae27 = $(`<div id="html_178b3ac2317c4f453ce8028b5a64ae27" style="width: 100.0%; height: 100.0%;">hidden valley: 1 students</div>`)[0];
+                popup_eda6a0111312c8aa56ff9880ac4f8423.setContent(html_178b3ac2317c4f453ce8028b5a64ae27);
+            
+        
+
+        marker_6d936a8297a33e66bbadfc1dc945e8e1.bindPopup(popup_eda6a0111312c8aa56ff9880ac4f8423)
+        ;
+
+        
+    
+    
+                marker_6d936a8297a33e66bbadfc1dc945e8e1.setIcon(icon_a4482e46489391d4165a3c8fdb341541);
+            
+    
+            var marker_688b30bd9fa607757afae420cfcf6dc1 = L.marker(
+                [51.013442, -114.1516969],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_e343c8278aa806e989934596cad5a17a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f912c6c458d2805e7125b1287b7fbd79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8edafdf547a21c4d82ba3196b06291c0 = $(`<div id="html_8edafdf547a21c4d82ba3196b06291c0" style="width: 100.0%; height: 100.0%;">Glamorgan: 1 students</div>`)[0];
+                popup_f912c6c458d2805e7125b1287b7fbd79.setContent(html_8edafdf547a21c4d82ba3196b06291c0);
+            
+        
+
+        marker_688b30bd9fa607757afae420cfcf6dc1.bindPopup(popup_f912c6c458d2805e7125b1287b7fbd79)
+        ;
+
+        
+    
+    
+                marker_688b30bd9fa607757afae420cfcf6dc1.setIcon(icon_e343c8278aa806e989934596cad5a17a);
+            
+    
+            var marker_f6d061cdecf2e16189765c4fd5d077eb = L.marker(
+                [51.0293578, -114.0865186],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_8cf6ea2fc66ac81681054d85a5c365f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fba233012c7ac27bf488e4fe9822dbc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b4435009d815074eed70afa002b5c24 = $(`<div id="html_4b4435009d815074eed70afa002b5c24" style="width: 100.0%; height: 100.0%;">Upper Mount Royal: 1 students</div>`)[0];
+                popup_fba233012c7ac27bf488e4fe9822dbc4.setContent(html_4b4435009d815074eed70afa002b5c24);
+            
+        
+
+        marker_f6d061cdecf2e16189765c4fd5d077eb.bindPopup(popup_fba233012c7ac27bf488e4fe9822dbc4)
+        ;
+
+        
+    
+    
+                marker_f6d061cdecf2e16189765c4fd5d077eb.setIcon(icon_8cf6ea2fc66ac81681054d85a5c365f6);
+            
+    
+            var marker_8e67531c1bb74766cad11ee81e6432e5 = L.marker(
+                [51.0417658, -114.1396142],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_ff380759c80d84ab781fa41b49b1d681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa98592b18374548029eee26f190604a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4716a7dbb6e6f0fb562caa5653ffc5a = $(`<div id="html_d4716a7dbb6e6f0fb562caa5653ffc5a" style="width: 100.0%; height: 100.0%;">Sw: 1 students</div>`)[0];
+                popup_aa98592b18374548029eee26f190604a.setContent(html_d4716a7dbb6e6f0fb562caa5653ffc5a);
+            
+        
+
+        marker_8e67531c1bb74766cad11ee81e6432e5.bindPopup(popup_aa98592b18374548029eee26f190604a)
+        ;
+
+        
+    
+    
+                marker_8e67531c1bb74766cad11ee81e6432e5.setIcon(icon_ff380759c80d84ab781fa41b49b1d681);
+            
+    
+            var marker_5ba768c12f76783ee29fa0ac3e37cf6e = L.marker(
+                [51.1771597, -114.1632737],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_f9e1e7ff42e0d1a11cc7bc377be1cec7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6201c0a9e27a8d769ede2c14eac172ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c06a9868867b36a229e5beea76979533 = $(`<div id="html_c06a9868867b36a229e5beea76979533" style="width: 100.0%; height: 100.0%;">nolan hill: 1 students</div>`)[0];
+                popup_6201c0a9e27a8d769ede2c14eac172ab.setContent(html_c06a9868867b36a229e5beea76979533);
+            
+        
+
+        marker_5ba768c12f76783ee29fa0ac3e37cf6e.bindPopup(popup_6201c0a9e27a8d769ede2c14eac172ab)
+        ;
+
+        
+    
+    
+                marker_5ba768c12f76783ee29fa0ac3e37cf6e.setIcon(icon_f9e1e7ff42e0d1a11cc7bc377be1cec7);
+            
+    
+            var marker_7afb8add9a4ed4f4c2c71f0bcd71cced = L.marker(
+                [51.1735731, -114.1207416],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_6bec6c5c755c6dfd4f2838b3ee566669 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69bdf567074511c575dfaaa81c536517 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a24ed42f0d8aff0ed15e0d913b0ba42b = $(`<div id="html_a24ed42f0d8aff0ed15e0d913b0ba42b" style="width: 100.0%; height: 100.0%;">Evanston, NW calgary: 1 students</div>`)[0];
+                popup_69bdf567074511c575dfaaa81c536517.setContent(html_a24ed42f0d8aff0ed15e0d913b0ba42b);
+            
+        
+
+        marker_7afb8add9a4ed4f4c2c71f0bcd71cced.bindPopup(popup_69bdf567074511c575dfaaa81c536517)
+        ;
+
+        
+    
+    
+                marker_7afb8add9a4ed4f4c2c71f0bcd71cced.setIcon(icon_6bec6c5c755c6dfd4f2838b3ee566669);
+            
+    
+            var marker_ac5bb4953530f2ff7de67f9d65764032 = L.marker(
+                [50.9852177, -114.1081198],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_ccc05c3213f8ea4d11cbf01c3b5a03d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3926553dca30b8fe426567fc1f64580e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa39bc3d37889b1b0e2a71bbcdc4ca87 = $(`<div id="html_aa39bc3d37889b1b0e2a71bbcdc4ca87" style="width: 100.0%; height: 100.0%;">southwest: 1 students</div>`)[0];
+                popup_3926553dca30b8fe426567fc1f64580e.setContent(html_aa39bc3d37889b1b0e2a71bbcdc4ca87);
+            
+        
+
+        marker_ac5bb4953530f2ff7de67f9d65764032.bindPopup(popup_3926553dca30b8fe426567fc1f64580e)
+        ;
+
+        
+    
+    
+                marker_ac5bb4953530f2ff7de67f9d65764032.setIcon(icon_ccc05c3213f8ea4d11cbf01c3b5a03d7);
+            
+    
+            var marker_2ee925a2b1187b938423a94f6775a52a = L.marker(
+                [51.145091, -114.1757304],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_b965581abddbc68bd70e31b98a8d9feb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fbdcf370fd0f0dc6a4bbe8bb5f64ce6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f474b3d441e8f6d595bd70fcdc37334 = $(`<div id="html_1f474b3d441e8f6d595bd70fcdc37334" style="width: 100.0%; height: 100.0%;">Citadel: 1 students</div>`)[0];
+                popup_5fbdcf370fd0f0dc6a4bbe8bb5f64ce6.setContent(html_1f474b3d441e8f6d595bd70fcdc37334);
+            
+        
+
+        marker_2ee925a2b1187b938423a94f6775a52a.bindPopup(popup_5fbdcf370fd0f0dc6a4bbe8bb5f64ce6)
+        ;
+
+        
+    
+    
+                marker_2ee925a2b1187b938423a94f6775a52a.setIcon(icon_b965581abddbc68bd70e31b98a8d9feb);
+            
+    
+            var marker_a9326c06dbc13a02c9170c922147e5ef = L.marker(
+                [51.023324, -114.1488999],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_6ff2f4790c1c050baee9b5126f752494 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7113d90eb4f12c8e18b9747686728d6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9521358e0a4e08ea75f4bfb2ada8e2f4 = $(`<div id="html_9521358e0a4e08ea75f4bfb2ada8e2f4" style="width: 100.0%; height: 100.0%;">Glenbrook: 1 students</div>`)[0];
+                popup_7113d90eb4f12c8e18b9747686728d6f.setContent(html_9521358e0a4e08ea75f4bfb2ada8e2f4);
+            
+        
+
+        marker_a9326c06dbc13a02c9170c922147e5ef.bindPopup(popup_7113d90eb4f12c8e18b9747686728d6f)
+        ;
+
+        
+    
+    
+                marker_a9326c06dbc13a02c9170c922147e5ef.setIcon(icon_6ff2f4790c1c050baee9b5126f752494);
+            
+    
+            var marker_41512a55674c6bb96b059cf756d709c6 = L.marker(
+                [51.1595638, -114.148693],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_22cbfa8eff584e7434921b574512b6de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5564fc05940d171ecb3b82cbd23111f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82d40191f5c9346617b9747cabc80ef5 = $(`<div id="html_82d40191f5c9346617b9747cabc80ef5" style="width: 100.0%; height: 100.0%;">sherwood: 1 students</div>`)[0];
+                popup_e5564fc05940d171ecb3b82cbd23111f.setContent(html_82d40191f5c9346617b9747cabc80ef5);
+            
+        
+
+        marker_41512a55674c6bb96b059cf756d709c6.bindPopup(popup_e5564fc05940d171ecb3b82cbd23111f)
+        ;
+
+        
+    
+    
+                marker_41512a55674c6bb96b059cf756d709c6.setIcon(icon_22cbfa8eff584e7434921b574512b6de);
+            
+    
+            var marker_b47d49a4a6419ee18fac781a757beb49 = L.marker(
+                [50.9176132, -114.1147339],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_0611965fce398e4bdd1be67f1973d773 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efb263995a002b1c8f4d02635e8026df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef9b067738cbcdaea33273086b1c7d10 = $(`<div id="html_ef9b067738cbcdaea33273086b1c7d10" style="width: 100.0%; height: 100.0%;">evergreen: 1 students</div>`)[0];
+                popup_efb263995a002b1c8f4d02635e8026df.setContent(html_ef9b067738cbcdaea33273086b1c7d10);
+            
+        
+
+        marker_b47d49a4a6419ee18fac781a757beb49.bindPopup(popup_efb263995a002b1c8f4d02635e8026df)
+        ;
+
+        
+    
+    
+                marker_b47d49a4a6419ee18fac781a757beb49.setIcon(icon_0611965fce398e4bdd1be67f1973d773);
+            
+    
+            var marker_dbb14db0b31046664a326e1e1d37f1a9 = L.marker(
+                [51.0538013, -114.0443096],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_3eb088c734e8fbb98a910f9807e96058 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2c4141ebe19fb6ca390c08218ab6333 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d68b9559359c122cdc181e3dee3dd6c = $(`<div id="html_2d68b9559359c122cdc181e3dee3dd6c" style="width: 100.0%; height: 100.0%;">Bridgeland: 1 students</div>`)[0];
+                popup_f2c4141ebe19fb6ca390c08218ab6333.setContent(html_2d68b9559359c122cdc181e3dee3dd6c);
+            
+        
+
+        marker_dbb14db0b31046664a326e1e1d37f1a9.bindPopup(popup_f2c4141ebe19fb6ca390c08218ab6333)
+        ;
+
+        
+    
+    
+                marker_dbb14db0b31046664a326e1e1d37f1a9.setIcon(icon_3eb088c734e8fbb98a910f9807e96058);
+            
+    
+            var marker_ebb3d9dc3f0e145b1cc13a8c46eb7574 = L.marker(
+                [51.0842774, -114.1238276],
+                {
+}
+            ).addTo(map_827968f7623b7716cf046f30f7cfb152);
+        
+    
+            var icon_20604881f9d6c1092d9470a72264f0c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_373e2166f9aa779b13c8e430fd49f647 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbe6816dcacd02413cc9d3fd6f2ae92c = $(`<div id="html_dbe6816dcacd02413cc9d3fd6f2ae92c" style="width: 100.0%; height: 100.0%;">Charleswood NW: 1 students</div>`)[0];
+                popup_373e2166f9aa779b13c8e430fd49f647.setContent(html_dbe6816dcacd02413cc9d3fd6f2ae92c);
+            
+        
+
+        marker_ebb3d9dc3f0e145b1cc13a8c46eb7574.bindPopup(popup_373e2166f9aa779b13c8e430fd49f647)
+        ;
+
+        
+    
+    
+                marker_ebb3d9dc3f0e145b1cc13a8c46eb7574.setIcon(icon_20604881f9d6c1092d9470a72264f0c2);
+            
+</script>
+</html>
